@@ -1,7 +1,7 @@
 # Business-Analytics
 이 내용은 강필성 교수님의 비즈니스 애널리틱스(2022년 2학기) 수업 내용을 참고한 내용입니다. 
 
-## Dimensionality Reduction
+## Dimensionality Reduction Overview
 
 ### Curse of Demensionality
 실제 데이터의 차원은 매우 크더라도 내재된 차원(intrinsic/embedded dimension)은 원래 차원의 수보다 낮은 경우가 대부분
@@ -52,6 +52,17 @@
     
 ![image](https://user-images.githubusercontent.com/112569789/194992865-312ada9a-68e0-4364-b64c-f4da0e9ac5a7.png)
 
+-----------------------------------------------------------------------------------------------------------------
+
+## Dimensionality Reduction
+1. Supervised Method
+- [Genetic_algorithm]#
+
+2. Unsupervised Method - Linear
+- [MDS]#
+
+3. Unsupervisd Method - Nonlinear
+- [Unsupervised Method(Nonlinear)#
 
     
  
