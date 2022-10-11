@@ -59,7 +59,7 @@
 - [Genetic_algorithm]#
 
 2. Unsupervised Method - Linear
-- [MDS]#
+- [MDS]#https://github.com/YooD11/Business-Analytics/blob/main/MDS.ipynb
 
 3. Unsupervisd Method - Nonlinear
 - [Unsupervised Method(Nonlinear)#
