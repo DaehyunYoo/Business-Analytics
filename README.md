@@ -56,9 +56,11 @@
 
 ## Dimensionality Reduction
 1. Supervised Method
-- [Genetic_algorithm]#
+- Forward Selection, Backward Elimination, Stepwise selection
+- Genetic Algorithm [Genetic_algorithm]
 
 2. Unsupervised Method - Linear
+- PCA
 - [MDS](https://github.com/YooD11/Business-Analytics/blob/main/MDS.ipynb)
 
 3. Unsupervisd Method - Nonlinear
