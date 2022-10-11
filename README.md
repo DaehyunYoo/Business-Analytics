@@ -63,9 +63,10 @@
 - PCA
 - [MDS](https://github.com/YooD11/Business-Analytics/blob/main/MDS.ipynb)
 
-3. Unsupervisd Method - Nonlinear
-- [Unsupervised Method(Nonlinear)](https://github.com/YooD11/Business-Analytics/blob/main/Unsupervised_nonlinear.ipynb) 
- 
+3. Unsupervisd Method - Nonlinear(https://github.com/YooD11/Business-Analytics/blob/main/Unsupervised_nonlinear.ipynb) 
+- ISOMAP
+- LLE
+- t-SNE
     
  
  
