@@ -58,7 +58,7 @@
 ## Dimensionality Reduction
 1. Supervised Method
 - Forward Selection, Backward Elimination, Stepwise selection
-- Genetic Algorithm [Genetic_algorithm]
+- Genetic Algorithm
 
 2. Unsupervised Method - Linear
 - PCA
