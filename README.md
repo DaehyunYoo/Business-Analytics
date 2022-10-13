@@ -61,7 +61,7 @@
 
 2. Unsupervised Method - Linear
 - PCA
-- [MDS](https://github.com/YooD11/Business-Analytics/blob/main/MDS.ipynb)
+- [MDS](https://github.com/YooD11/Business-Analytics/blob/main/1.%20Dimensionality%20Reduction/MDS.ipynb)
 
 3. Unsupervisd Method - [Nonlinear](https://github.com/YooD11/Business-Analytics/blob/main/Unsupervised_nonlinear.ipynb) 
 - ISOMAP
