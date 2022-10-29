@@ -7,13 +7,15 @@ SVM은 분류, 회귀(SVR) 목적으로 사용되는 머신러닝 알고리즘�
 Support vector machine은 벡터 공간 상에 있는 데이터들을 가장 잘 나눌 수 있는 직선(hyperplane)을 찾아내는 것을 목표로 한다.  
 SVM은 선형분류 목적 이외에도 SVM은 커널 트릭을 사용하여 비선형 분류를 효율적으로 수행할 수 있다. 이를 통해 입력을 고차원 형상 공간에 암시적으로 매핑할 수 있다. 선형으로 분류가 불가능한 경우엔 Kernel 함수를 도입해 분류 경계면을 탐색하게 된다. 
 
-<p align="center"><img src= "img/1.png"></p>
+![](https://postfiles.pstatic.net/MjAyMjEwMjlfMTUx/MDAxNjY3MDMxMjAzNTY3.st26a8hL1CU6mTcU3SMDzhyLcKoZwJw7AEt2CcxZQ4og.By022otz0EV6Ezbc-kjb2FA_w8YuI3tj96lLYSj-nugg.PNG.dhyoo9701/1.png?type=w773)
 
 분류 모델은 모형의 복잡도가 증가할수록 주어진 학습 데이터를 더 잘 분류할 수 있게 되지만 데이터에 있는 노이즈까지 학습하게 되면서 학습데이터만 잘 분류하는 문제가 커지게된다. 따라서 어떤 분류 모형이 실제 데이터가 주어졌을 때 이를 잘 분류하기 위해서는 학습과정에서의 오류를 낮추면서 모델의 복잡도도 줄여야 한다. 이 두가지를 모형의 구조적 위험이라 한다. 
 
 SVM은 d차원의 데이터를 나누는 d-1차원의 hyperplane을 구하는 문제인데 이 hyperplane들에 적용하는 기준이 되는 것이 마진(margin)이다. 마진은 hyperplane에 의해 분류된 데이터포인트와 hyperplane간의 거리들 가운데 가장 짧은 거리를 의미한다.
 
 SVM은 이론적으로 마진의 크기를 최대화하면 구조적 위험이 최소화된다. 어떤 함수의 복잡도를 측정하는 지표 즉, 얼마만큼 표현력을 가지고 있는지에 대한 지표인 VC dimension이라고 하는데 모델의 구조적 위험은 데이터로부터 얻는 위험과 모델의 복잡성으로부터 얻는 위험의 합만큼 가질 수 있다. 즉, 마진을 최대화하는 것이 결국 모델의 구조적 위험을 최소화하므로, 마진을 최대화해서 모델의 일반화 성능을 높일 수 있다. 
+
+
 
 <p align="center"><img src= "img/2.png"></p>
 
