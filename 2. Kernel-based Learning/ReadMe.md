@@ -25,7 +25,8 @@ SVM은 이론적으로 마진의 크기를 최대화하면 구조적 위험이 �
 
 <center> 
 
-$$min \frac {1} {2} \lVert {w} \rVert^{2}$$ 
+$$
+min \frac {1} {2} \lVert {w} \rVert^{2}$$ 
 
 </center> 
 
@@ -44,9 +45,12 @@ $$s.t. \quad  y_i \left( w^{t}x_i +b \right) \ge 1$$
 제약이 있는 최적화 문제를 푸는 것이므로 Lagrange multiplier을 사용할 수 있다. 여기서 $\alpha$는 Lagrange multiplier이다. 
 
 <center> 
-  
-${\min{L_{p}(w,b,{\alpha}_{i})}}=\frac{1}{2}{\left|w\right|}^{2}-\sum{i=1}^{n}{{\alpha}_{i}({y}_{i}({w}^{T}{x}_{i}+b)-1)}$
- 
+
+$$
+{\min{ L_{p}(w,b,{ \alpha }_{ i }) } } =\frac { 1 }{ 2 } { \left| w \right| }^{ 2 }-\sum { i=1 }^{ n }{ { \alpha }_{ i }({ y }_{ i }
+({ w }^{ T }{ x }_{ i }+b)-1) }
+$$ 
+
 </center>
 
 L을 미지수 w와 b로 각각 편미분한 값이 0이 되는 곳에서 최솟값을 갖으므로 각각을 정리하면 각각을 정리하면 w와 b를 a와 x, y에 대한 식으로 정리할 수 있다. 
@@ -55,11 +59,13 @@ Lagrange Primal problem만으로는 문제를 해결하기 어렵다. Dual Probl
 
 <center>
 
-$\max { { L }_{ D }({ \alpha }_{ i }) } =\sum_{ i=1 }^{ n }{ { \alpha }_{ i } } -\frac { 1 }{ 2 } \sum_{ i=1 }^{ n }{ \sum_{ j=1 }^{ n }{ { \alpha }_{ i }{ { \alpha }_{ j }y }_{ i }{ y }_{ j }{ x }_{ i }^{ T }{ x }_{ j } } }
-$
+$$
+\max { { L }_{ D }({ \alpha }_{ i }) } =\sum_{ i=1 }^{ n }{ { \alpha }_{ i } } -\frac { 1 }{ 2 } \sum_{ i=1 }^{ n }{ \sum_{ j=1 }^{ n }{ { \alpha }_{ i }{ { \alpha }_{ j }y }_{ i }{ y }_{ j }{ x }_{ i }^{ T }{ x }_{ j } } }
+$$
 
-$s.t.  \quad  \sum_{ i=1 }^{ n }{ { \alpha }_{ i }{ y }_{ i } } = 0,   { \alpha }_{ i }\ge 0,\quad i=1,...,n
-$
+$$
+s.t.  \quad  \sum_{ i=1 }^{ n }{ { \alpha }_{ i }{ y }_{ i } } = 0,   { \alpha }_{ i }\ge 0,\quad i=1,...,n
+$$
 
 </center>
 
@@ -81,9 +87,10 @@ Soft margin을 사용한 경우의 SVM을 살펴보면 다음과 같다.
 
 <center> 
 
-$ \min { \frac { 1 }{ 2 } { \left\| w \right\|  }_{ 2 }^{ 2 } } +C\sum _{ i=1 }^{ n }{ { \xi  }_{ i } } $ 
+$\min { \frac { 1 }{ 2 } { \left\| w \right\|  }_{ 2 }^{ 2 } } +C\sum _{ i=1 }^{ n }{ { \xi  }_{ i } }$ 
 
-$ s.t. \quad { y }_{ i }({ w }^{ T }{ x }_{ i }+b)\ge 1-{ \xi  }_{ i },\quad { \xi  }_{ i }\ge 0 $ 
+$s.t. \quad { y }_{ i }({ w }^{ T }{ x }_{ i }+b)\ge 1-{ \xi  }_{ i },\quad { \xi  }_{ i }\ge 0 
+$ 
 
 </center>
 
@@ -93,7 +100,8 @@ $ s.t. \quad { y }_{ i }({ w }^{ T }{ x }_{ i }+b)\ge 1-{ \xi  }_{ i },\quad { \
 
 <center>
 
-$ \alpha \left( y_i \left(w^{T}x_i + b \right)-1+\xi_{i} \right) = 0 $
+$\alpha \left( y_i \left(w^{T}x_i + b \right)-1+\xi_{i} \right) = 0
+$
 
 </center>
 
@@ -101,10 +109,11 @@ $ \alpha \left( y_i \left(w^{T}x_i + b \right)-1+\xi_{i} \right) = 0 $
 
 <center>
 
-$ C- \alpha_{i}-u_{i} = 0 \; and \; u_{i}\xi_i = 0 $
+$C- \alpha_{i}-u_{i} = 0 \; and \; u_{i}\xi_i = 0
+$
 </center>
 
-1. $ \alpha_i = 0 $ 이면 관측치는 non-support vector  
+1. $\alpha_i = 0$ 이면 관측치는 non-support vector  
 2. $0<\alpha_i<C$ 이면 관측치는 마진 위의 support vector
 3. $\alpha_i = C$이면 관측치는 마진 밖의 vector
 
