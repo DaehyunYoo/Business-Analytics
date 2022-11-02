@@ -125,9 +125,9 @@ $$
 
 1. $\alpha_i=0$ 이면 관측치는 non-support vector  
   
-2. $\0<alpha_i<C$ 이면 관측치는 마진 위의 support vector
+2. $$\0<alpha_i<C$$ 이면 관측치는 마진 위의 support vector
   
-3. $\alpha_i=C$이면 관측치는 마진 밖의 vector
+3. $$\alpha_i=C$$ 이면 관측치는 마진 밖의 vector
 
 </center>
   
