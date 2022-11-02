@@ -105,7 +105,9 @@ $$
 
 <center>
 
-$\alpha \left( y_i \left(w^{T}x_i + b \right)-1+\xi_{i} \right) = 0$
+$$
+\alpha \left( y_i \left(w^{T}x_i + b \right)-1+\xi_{i} \right) = 0
+$$
 
 </center>
 
@@ -113,7 +115,10 @@ $\alpha \left( y_i \left(w^{T}x_i + b \right)-1+\xi_{i} \right) = 0$
 
 <center>
 
-$C- \alpha_{i}-u_{i} = 0 \; and \; u_{i}\xi_i = 0$
+$$
+C- \alpha_{i}-u_{i} = 0 \; and \; u_{i}\xi_i = 0
+$$
+
 </center>
 
 1. $\alpha_i = 0$ 이면 관측치는 non-support vector  
@@ -138,11 +143,13 @@ C는 Regularization을 해준다. Large C이면 $\xi$가 작아지고 마진이 
 
 <center>
 
-$\min \frac{1}{2} \parallel w \parallel + C \sum_{i=1}^N \xi_i
-$
+$$
+\min \frac{1}{2} \parallel w \parallel + C \sum_{i=1}^N \xi_i
+$$
 
-$s.t. \quad y_i \left( w^T \Phi \left(x_i \right) + b   \right) \ge 1-\xi_i, \;\; \xi_i \ge 0, \forall i
-$
+$$
+s.t. \quad y_i \left( w^T \Phi \left(x_i \right) + b   \right) \ge 1-\xi_i, \;\; \xi_i \ge 0, \forall i
+$$
 
 </center>
 
