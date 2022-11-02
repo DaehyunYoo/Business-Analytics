@@ -121,10 +121,14 @@ $$
 
 </center>
 
-1. $\alpha_i = 0$ 이면 관측치는 non-support vector  
-2. $0<\alpha_i<C$ 이면 관측치는 마진 위의 support vector
-3. $\alpha_i = C$이면 관측치는 마진 밖의 vector
+<center>
 
+1. $ \alpha_i=0 $ 이면 관측치는 non-support vector  
+2. $ 0<\alpha_i<C $ 이면 관측치는 마진 위의 support vector
+3. $ \alpha_i=C $이면 관측치는 마진 밖의 vector
+
+</center>
+  
 ### C에 따른 영향
 C는 Regularization을 해준다. Large C이면 $\xi$가 작아지고 마진이 좁아져 적은 수의 support vector가 생성된다. 반대로 Small C이면 $\xi$가 커지고 마진이 커져 많은 수의 support vector가 생성된다.  
 
