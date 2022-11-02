@@ -9,7 +9,6 @@ SVM은 선형분류 목적 이외에도 SVM은 커널 트릭을 사용하여 비
 
 <p align="center"><img src="https://postfiles.pstatic.net/MjAyMjEwMjlfMTUx/MDAxNjY3MDMxMjAzNTY3.st26a8hL1CU6mTcU3SMDzhyLcKoZwJw7AEt2CcxZQ4og.By022otz0EV6Ezbc-kjb2FA_w8YuI3tj96lLYSj-nugg.PNG.dhyoo9701/1.png?type=w773"></p>
 
-<p align="center"><img src= "./img/1.png"></p>
 
 분류 모델은 모형의 복잡도가 증가할수록 주어진 학습 데이터를 더 잘 분류할 수 있게 되지만 데이터에 있는 노이즈까지 학습하게 되면서 학습데이터만 잘 분류하는 문제가 커지게된다. 따라서 어떤 분류 모형이 실제 데이터가 주어졌을 때 이를 잘 분류하기 위해서는 학습과정에서의 오류를 낮추면서 모델의 복잡도도 줄여야 한다. 이 두가지를 모형의 구조적 위험이라 한다. 
 
@@ -17,11 +16,11 @@ SVM은 d차원의 데이터를 나누는 d-1차원의 hyperplane을 구하는 �
 
 SVM은 이론적으로 마진의 크기를 최대화하면 구조적 위험이 최소화된다. 어떤 함수의 복잡도를 측정하는 지표 즉, 얼마만큼 표현력을 가지고 있는지에 대한 지표인 VC dimension이라고 하는데 모델의 구조적 위험은 데이터로부터 얻는 위험과 모델의 복잡성으로부터 얻는 위험의 합만큼 가질 수 있다. 즉, 마진을 최대화하는 것이 결국 모델의 구조적 위험을 최소화하므로, 마진을 최대화해서 모델의 일반화 성능을 높일 수 있다. 
 
-<p align="center"><img src= "img/2.png"></p>
+<p align="center"><img src="https://postfiles.pstatic.net/MjAyMjEwMjlfMTUx/MDAxNjY3MDMxMjAzNTY3.st26a8hL1CU6mTcU3SMDzhyLcKoZwJw7AEt2CcxZQ4og.By022otz0EV6Ezbc-kjb2FA_w8YuI3tj96lLYSj-nugg.PNG.dhyoo9701/2.png?type=w773"></p>
 
 
 ## SVM Case 1: Linear & Hard Margin
-<p align="center"><img src= "img/4.png"></p>  
+<p align="center"><img src="https://postfiles.pstatic.net/MjAyMjEwMjlfMTUx/MDAxNjY3MDMxMjAzNTY3.st26a8hL1CU6mTcU3SMDzhyLcKoZwJw7AEt2CcxZQ4og.By022otz0EV6Ezbc-kjb2FA_w8YuI3tj96lLYSj-nugg.PNG.dhyoo9701/4.png?type=w773"></p>  
 
 <center>  
 
@@ -63,14 +62,14 @@ $
 ### KKT Condition
 KKT(Karush-Kuhn-Tucker) Condition은 다음과 같다. 
 
-<p align="center"><img src= "img/5.png"></p> 
+<p align="center"><img src="https://postfiles.pstatic.net/MjAyMjEwMjlfMTUx/MDAxNjY3MDMxMjAzNTY3.st26a8hL1CU6mTcU3SMDzhyLcKoZwJw7AEt2CcxZQ4og.By022otz0EV6Ezbc-kjb2FA_w8YuI3tj96lLYSj-nugg.PNG.dhyoo9701/5.png?type=w773"></p> 
 
 
 ## SVM Case 2: Linear & Soft Margin
 
 Soft margin을 사용한 경우의 SVM을 살펴보면 다음과 같다. 
 
-<p align="center"><img src= "img/6.png"></p>
+<p align="center"><img src="https://postfiles.pstatic.net/MjAyMjEwMjlfMTUx/MDAxNjY3MDMxMjAzNTY3.st26a8hL1CU6mTcU3SMDzhyLcKoZwJw7AEt2CcxZQ4og.By022otz0EV6Ezbc-kjb2FA_w8YuI3tj96lLYSj-nugg.PNG.dhyoo9701/6.png?type=w773"></p>
 
 
 <center> 
@@ -108,18 +107,18 @@ $
 ### C에 따른 영향
 C는 Regularization을 해준다. Large C이면 $\xi$가 작아지고 마진이 좁아져 적은 수의 support vector가 생성된다. 반대로 Small C이면 $\xi$가 커지고 마진이 커져 많은 수의 support vector가 생성된다.  
 
-<p align="center"><img src= "img/7.png"></p>
+<p align="center"><img src="https://postfiles.pstatic.net/MjAyMjEwMjlfMTUx/MDAxNjY3MDMxMjAzNTY3.st26a8hL1CU6mTcU3SMDzhyLcKoZwJw7AEt2CcxZQ4og.By022otz0EV6Ezbc-kjb2FA_w8YuI3tj96lLYSj-nugg.PNG.dhyoo9701/7.png?type=w773"></p>
 
 ## SVM Case 3: non Linear & Soft Margin
 
 ### Kernel SVM 
 본래의 차원에서 선형 분리가 불가능할 경우, 더 높은 고차원에서 맵핑하였을 때 가능한 경우가 있다. 이러한 아이디어를 SVM에 도입하여 입력데이터를 고차원 공간으로 보낸 뒤에 결정 경계면을 찾고자 하는게 Kernel SVM이다. 
 
-<p align="center"><img src= "img/8.png"></p>
+<p align="center"><img src="https://postfiles.pstatic.net/MjAyMjEwMjlfMTUx/MDAxNjY3MDMxMjAzNTY3.st26a8hL1CU6mTcU3SMDzhyLcKoZwJw7AEt2CcxZQ4og.By022otz0EV6Ezbc-kjb2FA_w8YuI3tj96lLYSj-nugg.PNG.dhyoo9701/8.png?type=w773"></p>
 
 ### Nonlinear Soft Margin
 
-<p align="center"><img src= "img/9.png"></p>
+<p align="center"><img src="https://postfiles.pstatic.net/MjAyMjEwMjlfMTUx/MDAxNjY3MDMxMjAzNTY3.st26a8hL1CU6mTcU3SMDzhyLcKoZwJw7AEt2CcxZQ4og.By022otz0EV6Ezbc-kjb2FA_w8YuI3tj96lLYSj-nugg.PNG.dhyoo9701/9.png?type=w773"></p>
 
 <center>
 
@@ -142,7 +141,7 @@ Kernel 함수로 주로 사용되는 것은 다음과 같다.
 
 <center>
 
-<p align="center"><img src= "img/10.png"></p>
+<p align="center"><img src="https://postfiles.pstatic.net/MjAyMjEwMjlfMTUx/MDAxNjY3MDMxMjAzNTY3.st26a8hL1CU6mTcU3SMDzhyLcKoZwJw7AEt2CcxZQ4og.By022otz0EV6Ezbc-kjb2FA_w8YuI3tj96lLYSj-nugg.PNG.dhyoo9701/10.png?type=w773"></p>
 
 </center>
 
