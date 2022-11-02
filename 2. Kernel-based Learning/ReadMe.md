@@ -37,13 +37,8 @@ $s.t. \quad  y_i \left( w^{t}x_i +b \right) \ge 1$
 
 제약이 있는 최적화 문제를 푸는 것이므로 Lagrange multiplier을 사용할 수 있다. 여기서 $\alpha$는 Lagrange multiplier이다. 
 
-<center>
-
-${\min{ L_{p}(w,b,{ \alpha }_{ i }) } } =\frac { 1 }{ 2 } { \left| w \right| }^{ 2 }-\sum { i=1 }^{ n }{ { \alpha }_{ i }({ y }_{ i }
-({ w }^{ T }{ x }_{ i }+b)-1) }
-$
-
-</center>
+<center> ${\min{ L_{p}(w,b,{ \alpha }_{ i }) } } =\frac { 1 }{ 2 } { \left| w \right| }^{ 2 }-\sum { i=1 }^{ n }{ { \alpha }_{ i }({ y }_{ i }
+({ w }^{ T }{ x }_{ i }+b)-1) }$ </center>
 
 L을 미지수 w와 b로 각각 편미분한 값이 0이 되는 곳에서 최솟값을 갖으므로 각각을 정리하면 각각을 정리하면 w와 b를 a와 x, y에 대한 식으로 정리할 수 있다. 
 
