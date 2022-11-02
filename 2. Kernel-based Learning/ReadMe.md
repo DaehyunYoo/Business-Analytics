@@ -16,7 +16,7 @@ SVM은 d차원의 데이터를 나누는 d-1차원의 hyperplane을 구하는 �
 
 SVM은 이론적으로 마진의 크기를 최대화하면 구조적 위험이 최소화된다. 어떤 함수의 복잡도를 측정하는 지표 즉, 얼마만큼 표현력을 가지고 있는지에 대한 지표인 VC dimension이라고 하는데 모델의 구조적 위험은 데이터로부터 얻는 위험과 모델의 복잡성으로부터 얻는 위험의 합만큼 가질 수 있다. 즉, 마진을 최대화하는 것이 결국 모델의 구조적 위험을 최소화하므로, 마진을 최대화해서 모델의 일반화 성능을 높일 수 있다. 
 
-<p align="center"><img src="https://postfiles.pstatic.net/MjAyMjEwMjlfMTUx/MDAxNjY3MDMxMjAzNTY3.st26a8hL1CU6mTcU3SMDzhyLcKoZwJw7AEt2CcxZQ4og.By022otz0EV6Ezbc-kjb2FA_w8YuI3tj96lLYSj-nugg.PNG.dhyoo9701/2.png?type=w773](https://postfiles.pstatic.net/MjAyMjEwMjlfMjg5/MDAxNjY3MDMxMjAzNTcx.aZK_AqYx1ppS6g3hQHK8GSVNQwIN-HM0HRPdAMA1-xsg.9xBirEOWWVBCK7fZ0qjyQpWZCYBqOLrHX-0H0U0o0RQg.PNG.dhyoo9701/2.png?type=w773"></p>
+<p align="center"><img src="https://postfiles.pstatic.net/MjAyMjEwMjlfMjg5/MDAxNjY3MDMxMjAzNTcx.aZK_AqYx1ppS6g3hQHK8GSVNQwIN-HM0HRPdAMA1-xsg.9xBirEOWWVBCK7fZ0qjyQpWZCYBqOLrHX-0H0U0o0RQg.PNG.dhyoo9701/2.png?type=w773"></p>
 
 
 ## SVM Case 1: Linear & Hard Margin
