@@ -23,9 +23,11 @@ SVM은 이론적으로 마진의 크기를 최대화하면 구조적 위험이 �
 <p align="center"><img src= "https://postfiles.pstatic.net/MjAyMjEwMjlfMjI0/MDAxNjY3MDMxMjAzNTY4.XTebo2szkUuJQY2ka86y30C5_9HpsDTfoUR4BOPVoy4g.Dk8ONeDDMHX5IGQ3MZ5s7O9Q4vIdV6Ti6gO2m_62Cqog.PNG.dhyoo9701/4.png?type=w773"></p>  
 
 
-<center>$min \frac {1} {2} \lVert {w} \rVert^{2}$</center> 
+<center> $min \frac {1} {2} \lVert {w} \rVert^{2}$ </center> 
 
-<center>$s.t. \quad  y_i \left( w^{t}x_i +b \right) \ge 1$</center>
+
+<center> $s.t. \quad  y_i \left( w^{t}x_i +b \right) \ge 1$ </center>
+
 
 선형 분류를 하고자 할 때 하드마진을 사용해 SVM을 만든다면 다음과 같이 마진을 최대화하도록 목적식을 정의합니다. 해당 목적식으로부터 SVM의 최적해를 얻는 과정에서 KKT 조건에 의해 w와 b를 얻을 수 있게 됩니다. 
 
