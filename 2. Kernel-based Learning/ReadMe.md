@@ -7,6 +7,7 @@ SVM은 분류, 회귀(SVR) 목적으로 사용되는 머신러닝 알고리즘�
 Support vector machine은 벡터 공간 상에 있는 데이터들을 가장 잘 나눌 수 있는 직선(hyperplane)을 찾아내는 것을 목표로 한다.  
 SVM은 선형분류 목적 이외에도 SVM은 커널 트릭을 사용하여 비선형 분류를 효율적으로 수행할 수 있다. 이를 통해 입력을 고차원 형상 공간에 암시적으로 매핑할 수 있다. 선형으로 분류가 불가능한 경우엔 Kernel 함수를 도입해 분류 경계면을 탐색하게 된다. 
 
+<p align="center"><img src="https://postfiles.pstatic.net/MjAyMjEwMjlfMTUx/MDAxNjY3MDMxMjAzNTY3.st26a8hL1CU6mTcU3SMDzhyLcKoZwJw7AEt2CcxZQ4og.By022otz0EV6Ezbc-kjb2FA_w8YuI3tj96lLYSj-nugg.PNG.dhyoo9701/1.png?type=w773"></p>
 
 <p align="center"><img src= "./img/1.png"></p>
 
