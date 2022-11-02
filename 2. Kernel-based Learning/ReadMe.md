@@ -25,14 +25,14 @@ SVM은 이론적으로 마진의 크기를 최대화하면 구조적 위험이 �
 
 <center> 
 
-$min \frac {1} {2} \lVert {w} \rVert^{2}$ 
+$$min \frac {1} {2} \lVert {w} \rVert^{2}$$ 
 
 </center> 
 
 
 <center> 
 
-$s.t. \quad  y_i \left( w^{t}x_i +b \right) \ge 1$ 
+$$s.t. \quad  y_i \left( w^{t}x_i +b \right) \ge 1$$ 
 
 </center>
 
