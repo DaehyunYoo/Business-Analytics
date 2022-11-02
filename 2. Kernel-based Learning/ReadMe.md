@@ -87,11 +87,12 @@ Soft margin을 사용한 경우의 SVM을 살펴보면 다음과 같다.
 
 <center> 
 
+  
 $\min { \frac { 1 }{ 2 } { \left\| w \right\|  }_{ 2 }^{ 2 } } +C\sum _{ i=1 }^{ n }{ { \xi  }_{ i } }$ 
 
-$s.t. \quad { y }_{ i }({ w }^{ T }{ x }_{ i }+b)\ge 1-{ \xi  }_{ i },\quad { \xi  }_{ i }\ge 0 
-$ 
+$s.t. \quad { y }_{ i }({ w }^{ T }{ x }_{ i }+b)\ge 1-{ \xi  }_{ i },\quad { \xi  }_{ i }\ge 0$ 
 
+  
 </center>
 
 목적식을 보면 Hard margin일때와의 차이는 조건을 만족시키지 못하는 경우 $\xi$를 통해 패널티를 부여한다. $\xi$는 + plane 혹은 - plane으로부터 해당 범주와의 거리이다. 즉, Hadr margin일 때보다 찾아야 하는 미지수가 하나 더 늘어난 것이다. 
@@ -100,8 +101,7 @@ $
 
 <center>
 
-$\alpha \left( y_i \left(w^{T}x_i + b \right)-1+\xi_{i} \right) = 0
-$
+$\alpha \left( y_i \left(w^{T}x_i + b \right)-1+\xi_{i} \right) = 0$
 
 </center>
 
@@ -109,8 +109,7 @@ $
 
 <center>
 
-$C- \alpha_{i}-u_{i} = 0 \; and \; u_{i}\xi_i = 0
-$
+$C- \alpha_{i}-u_{i} = 0 \; and \; u_{i}\xi_i = 0$
 </center>
 
 1. $\alpha_i = 0$ 이면 관측치는 non-support vector  
