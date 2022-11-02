@@ -16,11 +16,11 @@ SVM은 d차원의 데이터를 나누는 d-1차원의 hyperplane을 구하는 �
 
 SVM은 이론적으로 마진의 크기를 최대화하면 구조적 위험이 최소화된다. 어떤 함수의 복잡도를 측정하는 지표 즉, 얼마만큼 표현력을 가지고 있는지에 대한 지표인 VC dimension이라고 하는데 모델의 구조적 위험은 데이터로부터 얻는 위험과 모델의 복잡성으로부터 얻는 위험의 합만큼 가질 수 있다. 즉, 마진을 최대화하는 것이 결국 모델의 구조적 위험을 최소화하므로, 마진을 최대화해서 모델의 일반화 성능을 높일 수 있다. 
 
-<p align="center"><img src="https://postfiles.pstatic.net/MjAyMjEwMjlfMTUx/MDAxNjY3MDMxMjAzNTY3.st26a8hL1CU6mTcU3SMDzhyLcKoZwJw7AEt2CcxZQ4og.By022otz0EV6Ezbc-kjb2FA_w8YuI3tj96lLYSj-nugg.PNG.dhyoo9701/2.png?type=w773"></p>
+<p align="center"><img src="https://postfiles.pstatic.net/MjAyMjEwMjlfMTUx/MDAxNjY3MDMxMjAzNTY3.st26a8hL1CU6mTcU3SMDzhyLcKoZwJw7AEt2CcxZQ4og.By022otz0EV6Ezbc-kjb2FA_w8YuI3tj96lLYSj-nugg.PNG.dhyoo9701/2.png?type=w773](https://postfiles.pstatic.net/MjAyMjEwMjlfMjg5/MDAxNjY3MDMxMjAzNTcx.aZK_AqYx1ppS6g3hQHK8GSVNQwIN-HM0HRPdAMA1-xsg.9xBirEOWWVBCK7fZ0qjyQpWZCYBqOLrHX-0H0U0o0RQg.PNG.dhyoo9701/2.png?type=w773"></p>
 
 
 ## SVM Case 1: Linear & Hard Margin
-<p align="center"><img src="https://postfiles.pstatic.net/MjAyMjEwMjlfMTUx/MDAxNjY3MDMxMjAzNTY3.st26a8hL1CU6mTcU3SMDzhyLcKoZwJw7AEt2CcxZQ4og.By022otz0EV6Ezbc-kjb2FA_w8YuI3tj96lLYSj-nugg.PNG.dhyoo9701/4.png?type=w773"></p>  
+<p align="center"><img src= "https://postfiles.pstatic.net/MjAyMjEwMjlfMjI0/MDAxNjY3MDMxMjAzNTY4.XTebo2szkUuJQY2ka86y30C5_9HpsDTfoUR4BOPVoy4g.Dk8ONeDDMHX5IGQ3MZ5s7O9Q4vIdV6Ti6gO2m_62Cqog.PNG.dhyoo9701/4.png?type=w773"></p>  
 
 <center>  
 
@@ -62,14 +62,14 @@ $
 ### KKT Condition
 KKT(Karush-Kuhn-Tucker) Condition은 다음과 같다. 
 
-<p align="center"><img src="https://postfiles.pstatic.net/MjAyMjEwMjlfMTUx/MDAxNjY3MDMxMjAzNTY3.st26a8hL1CU6mTcU3SMDzhyLcKoZwJw7AEt2CcxZQ4og.By022otz0EV6Ezbc-kjb2FA_w8YuI3tj96lLYSj-nugg.PNG.dhyoo9701/5.png?type=w773"></p> 
+<p align="center"><img src="https://postfiles.pstatic.net/MjAyMjEwMjlfNzAg/MDAxNjY3MDMxMjAzNTY5.wJnviFsSogclEmb8iwz-VCldC60OBzTuN8XmF9Q8N0og.vW6J9webRFdFqz0jnLOtGw0TP1dRm-sssF5XvaPIgqwg.PNG.dhyoo9701/5.png?type=w773"></p> 
 
 
 ## SVM Case 2: Linear & Soft Margin
 
 Soft margin을 사용한 경우의 SVM을 살펴보면 다음과 같다. 
 
-<p align="center"><img src="https://postfiles.pstatic.net/MjAyMjEwMjlfMTUx/MDAxNjY3MDMxMjAzNTY3.st26a8hL1CU6mTcU3SMDzhyLcKoZwJw7AEt2CcxZQ4og.By022otz0EV6Ezbc-kjb2FA_w8YuI3tj96lLYSj-nugg.PNG.dhyoo9701/6.png?type=w773"></p>
+<p align="center"><img src="https://postfiles.pstatic.net/MjAyMjEwMjlfMjQ1/MDAxNjY3MDMxMjAzNTY3.fQZoSZPaJGy7fsTKn8Lw8hjCnoMSURqT64LAUVFzCrQg.EvrYhUp0YJms2CoEfYAG82tDPLHXfKZO2Hlk9EItciEg.PNG.dhyoo9701/6.png?type=w773"></p>
 
 
 <center> 
@@ -107,18 +107,18 @@ $
 ### C에 따른 영향
 C는 Regularization을 해준다. Large C이면 $\xi$가 작아지고 마진이 좁아져 적은 수의 support vector가 생성된다. 반대로 Small C이면 $\xi$가 커지고 마진이 커져 많은 수의 support vector가 생성된다.  
 
-<p align="center"><img src="https://postfiles.pstatic.net/MjAyMjEwMjlfMTUx/MDAxNjY3MDMxMjAzNTY3.st26a8hL1CU6mTcU3SMDzhyLcKoZwJw7AEt2CcxZQ4og.By022otz0EV6Ezbc-kjb2FA_w8YuI3tj96lLYSj-nugg.PNG.dhyoo9701/7.png?type=w773"></p>
+<p align="center"><img src="https://postfiles.pstatic.net/MjAyMjEwMjlfMjE5/MDAxNjY3MDMxMjAzNTcz.G9xLodwjlIRzBzvsRTXid-tnJ_BSeJZgHgJIDbluGrEg.oA9FQCShME_ENdVGppjYnxPE2kvVVWetBDgpeP-3sfsg.PNG.dhyoo9701/7.png?type=w773"></p>
 
 ## SVM Case 3: non Linear & Soft Margin
 
 ### Kernel SVM 
 본래의 차원에서 선형 분리가 불가능할 경우, 더 높은 고차원에서 맵핑하였을 때 가능한 경우가 있다. 이러한 아이디어를 SVM에 도입하여 입력데이터를 고차원 공간으로 보낸 뒤에 결정 경계면을 찾고자 하는게 Kernel SVM이다. 
 
-<p align="center"><img src="https://postfiles.pstatic.net/MjAyMjEwMjlfMTUx/MDAxNjY3MDMxMjAzNTY3.st26a8hL1CU6mTcU3SMDzhyLcKoZwJw7AEt2CcxZQ4og.By022otz0EV6Ezbc-kjb2FA_w8YuI3tj96lLYSj-nugg.PNG.dhyoo9701/8.png?type=w773"></p>
+<p align="center"><img src="https://postfiles.pstatic.net/MjAyMjEwMjlfMjMz/MDAxNjY3MDMxMjAzNzQx.tm3J5ZY6SYPzyS03LiheVwmZDC5UkluwgjaNRPE7u2sg.Xf1mkgAWNKxmO4DCODlIZtcqXBNkRpCUEk5Eo9XdH7wg.PNG.dhyoo9701/8.png?type=w773"></p>
 
 ### Nonlinear Soft Margin
 
-<p align="center"><img src="https://postfiles.pstatic.net/MjAyMjEwMjlfMTUx/MDAxNjY3MDMxMjAzNTY3.st26a8hL1CU6mTcU3SMDzhyLcKoZwJw7AEt2CcxZQ4og.By022otz0EV6Ezbc-kjb2FA_w8YuI3tj96lLYSj-nugg.PNG.dhyoo9701/9.png?type=w773"></p>
+<p align="center"><img src="https://postfiles.pstatic.net/MjAyMjEwMjlfMjU2/MDAxNjY3MDMxMjAzNzQ1.oIQ3EBZdP46u9M3e8tVqvMSHorK0vPY9NFhnc2rHRqsg.NWoJEQjlJX1fU7M7THdowkMt5OigbeVeFP7IbrXfReMg.PNG.dhyoo9701/9.png?type=w773"></p>
 
 <center>
 
@@ -141,7 +141,7 @@ Kernel 함수로 주로 사용되는 것은 다음과 같다.
 
 <center>
 
-<p align="center"><img src="https://postfiles.pstatic.net/MjAyMjEwMjlfMTUx/MDAxNjY3MDMxMjAzNTY3.st26a8hL1CU6mTcU3SMDzhyLcKoZwJw7AEt2CcxZQ4og.By022otz0EV6Ezbc-kjb2FA_w8YuI3tj96lLYSj-nugg.PNG.dhyoo9701/10.png?type=w773"></p>
+<p align="center"><img src="https://postfiles.pstatic.net/MjAyMjEwMjlfMjEg/MDAxNjY3MDMxMjAzNzQ5.G1z94shYpF4REJa-_djzBd2Rc76CoT4fTSXg-FpmUkYg.ZxSZcokFltB1G7LZU6jI7hV6MISE7-C_Vu7icOLi538g.PNG.dhyoo9701/10.png?type=w773"></p>
 
 </center>
 
