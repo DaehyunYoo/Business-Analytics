@@ -88,9 +88,13 @@ Soft margin을 사용한 경우의 SVM을 살펴보면 다음과 같다.
 <center> 
 
   
-$$\min { \frac { 1 }{ 2 } { \left\| w \right\|  }_{ 2 }^{ 2 } } +C\sum _{ i=1 }^{ n }{ { \xi  }_{ i } }$$ 
+$$
+\min { \frac { 1 }{ 2 } { \left\| w \right\|  }_{ 2 }^{ 2 } } +C\sum _{ i=1 }^{ n }{ { \xi  }_{ i } }
+$$ 
 
-$$s.t. \quad { y }_{ i }({ w }^{ T }{ x }_{ i }+b)\ge 1-{ \xi  }_{ i },\quad { \xi  }_{ i }\ge 0$$ 
+$$
+s.t. \quad { y }_{ i }({ w }^{ T }{ x }_{ i }+b)\ge 1-{ \xi  }_{ i },\quad { \xi  }_{ i }\ge 0
+$$ 
 
   
 </center>
