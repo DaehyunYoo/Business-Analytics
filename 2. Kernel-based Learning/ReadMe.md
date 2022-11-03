@@ -174,4 +174,51 @@ Kernel 함수로 주로 사용되는 것은 다음과 같다.
 
 </center>
 
+# Support Vector Regression
 
+SVR은 SVM의 Regression 버전이며, loss function을 최소화하면서 가능한 단순한 함수를 사용하는 것이 목적이다. 오차를 최소화하면서 회귀 계수의 크기도 작은 일반화된 회귀식을 찾는 것이 목표이다. 
+
+<center>
+
+<p align="center"><img src="https://postfiles.pstatic.net/MjAyMjExMDNfMTE2/MDAxNjY3NDUyMTMxODAy.BgpN_rUCrLGpaYU1Ew6pKcvYqbffH35Q7prYnEB6XiMg.ENdgW4as7p3jfWdyg0HQPEfRo6m7Bnj3ZATa_3fdVXUg.PNG.dhyoo9701/11.png?type=w773"></p>
+
+</center>
+
+
+SVR의 목적함수는 손실함수와 함수의 편평도를 하나의 목적함수로 설정하고 $\pm \epsilon$ 정도는 허용하며 $\epsilon$ tube의 내부는 penalty를 주지 않는다. 즉, $\epsilon$은 회귀식 위아래의 허용되는 노이즈이다. 그 이유는 완벽히 fitting하게되면 과적합이 발생하여 오히려 좋지 않기 때문이다.  
+
+목적함수는 다음과 같다. 
+
+<center>
+
+$L_{SVR} = \min  \overbrace { { \left\| w \right\| }^{ 2} } ^{\text {Robustness}}+ {\lambda}\underbrace{  (\frac { 1 }{ 2 } \sum _{ i=1 }^ n {({ y }_{i} - { f(x_{i}) } )^2)}}_\text{ loss funciton }
+$
+
+
+$\\s.t. \quad    ({ w }^{ T }{ x }_{ i }+b)-{ y }_{ i }\le {\epsilon}+{ \xi  }_{ i }
+$
+
+$\quad \quad \quad  y_i-(w^Tx_i +b) \le {\epsilon}+{ \xi }_i^*
+$
+
+${ \xi  }_{ i }, { \xi  }_{ i }^* \ge {0}
+$
+
+</center>
+
+<center>
+
+<p align="center"><img src="https://postfiles.pstatic.net/MjAyMjExMDNfMTQg/MDAxNjY3NDUyMTU3NTY5.-3qYTSXacWzLibGt0F_dW1IeHmevpnLyvK-i9WE1IGEg.0RPAK0_ayTLWon2L03RYIBGePgI_9qdFXnq-nGJFLBAg.PNG.dhyoo9701/12.png?type=w773" width=600 height=300></p>
+
+</center>
+
+
+## Nonlinear
+
+SVR에서 비선형 데이터를 회귀하려면 SVM과 마찬가지로 Kernel 함수를 사용하면 된다. 입력 데이터를 x를 더 고차원에 맵핑하여 비선형 회귀 직선을 탐색할 수 있다. 
+
+<center>
+
+<p align="center"><img src="https://postfiles.pstatic.net/MjAyMjExMDNfMTU1/MDAxNjY3NDUyMjAzODcx.wfUSR1fa6jwxrKKJC6qJCESU5mBlF7evV836u82z4XYg.uoQ7fSMJwJ7pzQ0hdusqq8NSO4mFY8KqyfBspXZ8-Csg.PNG.dhyoo9701/13.png?type=w773"></p>
+
+</center>
