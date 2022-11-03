@@ -191,18 +191,22 @@ SVR의 목적함수는 손실함수와 함수의 편평도를 하나의 목적�
 
 <center>
 
-$L_{SVR} = \min  \overbrace { { \left\| w \right\| }^{ 2} } ^{\text {Robustness}}+ {\lambda}\underbrace{  (\frac { 1 }{ 2 } \sum _{ i=1 }^ n {({ y }_{i} - { f(x_{i}) } )^2)}}_\text{ loss funciton }
-$
+$$
+L_{SVR} = \min  \overbrace { { \left\| w \right\| }^{ 2} } ^{\text {Robustness}}+ {\lambda}\underbrace{  (\frac { 1 }{ 2 } \sum _{ i=1 }^ n {({ y }_{i} - { f(x_{i}) } )^2)}}_\text{ loss funciton }
+$$
 
 
-$\\s.t. \quad    ({ w }^{ T }{ x }_{ i }+b)-{ y }_{ i }\le {\epsilon}+{ \xi  }_{ i }
-$
+$$
+\\s.t. \quad    ({ w }^{ T }{ x }_{ i }+b)-{ y }_{ i }\le {\epsilon}+{ \xi  }_{ i }
+$$
 
-$\quad \quad \quad  y_i-(w^Tx_i +b) \le {\epsilon}+{ \xi }_i^*
-$
+$$
+\quad \quad \quad  y_i-(w^Tx_i +b) \le {\epsilon}+{ \xi }_i^*
+$$
 
-${ \xi  }_{ i }, { \xi  }_{ i }^* \ge {0}
-$
+$$
+{ \xi  }_{ i }, { \xi  }_{ i }^* \ge {0}
+$$
 
 </center>
 
