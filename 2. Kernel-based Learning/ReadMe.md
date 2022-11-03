@@ -226,3 +226,6 @@ SVR에서 비선형 데이터를 회귀하려면 SVM과 마찬가지로 Kernel �
 <p align="center"><img src="https://postfiles.pstatic.net/MjAyMjExMDNfMTU1/MDAxNjY3NDUyMjAzODcx.wfUSR1fa6jwxrKKJC6qJCESU5mBlF7evV836u82z4XYg.uoQ7fSMJwJ7pzQ0hdusqq8NSO4mFY8KqyfBspXZ8-Csg.PNG.dhyoo9701/13.png?type=w773"></p>
 
 </center>
+
+# SVM 구현 코드
+[Support Vector Classification & Support Vector Regression Code](https://github.com/YooD11/Business-Analytics/blob/main/2.%20Kernel-based%20Learning/SVM.ipynb)
