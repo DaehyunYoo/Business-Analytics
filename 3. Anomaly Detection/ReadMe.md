@@ -427,12 +427,13 @@ $$\alpha_i \ge0, \; \beta_i \ge0$$
 
 <center>
 
-$$\frac{\partial L}{\partial R}=2R-2R\sum_{i=1}^l\alpha_i=0\quad \Rightarrow \quad \sum_{i=1}^l\alpha_i=1$$
+$$\frac{\partial L}{\partial R}=2R-2R\sum_{i=1}^l\alpha_i=0\quad\Rightarrow\quad\sum_{i=1}^l\alpha_i=1$$
 
 
-$$\frac{\partial L}{\partial \mathbf{a}}=2\sum_{i=1}^l\alpha_i\cdot\mathbf{\Phi(\mathbf{X_i})-2\mathbf{a}\cdot\sum_{i=1}^l\alpha_i=0}\quad \Rightarrow\quad \mathbf{a}=\sum_{i=1}^l\alpha_i\cdot\mathbf{\Phi(\mathbf{X_i})}\\$$
+$$\frac{\partial L}{\partial \mathbf{a}}=2\sum_{i=1}^l\alpha_i\cdot\mathbf{\Phi(\mathbf{X_i})-2\mathbf{a}\cdot\sum_{i=1}^l\alpha_i=0}\quad \Rightarrow\quad \mathbf{a}=\sum_{i=1}^l\alpha_i\cdot\mathbf{\Phi(\mathbf{X_i})}$$
 
 $$\frac{\partial L}{\partial \xi_i}=C-\alpha_i-\beta_i=0 \quad \forall i$$
+
 
 </center>
 
