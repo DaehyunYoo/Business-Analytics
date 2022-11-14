@@ -29,12 +29,11 @@ Gaussian Density Estimation은 모든 데이터가 하나의 Gaussian(정규)분
 </center>
 
 <center>
-$p(x)\quad =\quad \frac { 1 }{ { 2\pi  }^{ { d }/{ 2 } }{ \Sigma  }^{ { 1 }/{ 2 } } } exp\left[ \frac { 1 }{ 2 } { (x-\mu ) }^{ T }{ \Sigma  }^{ -1 }(x-\mu ) \right]$
+$$p(x)\quad =\quad \frac { 1 }{ { 2\pi  }^{ { d }/{ 2 } }{ \Sigma  }^{ { 1 }/{ 2 } } } exp\left[ \frac { 1 }{ 2 } { (x-\mu ) }^{ T }{ \Sigma  }^{ -1 }(x-\mu ) \right]$$
 
 $$\mu \quad =\quad \frac { 1 }{ n } \sum _{ { x }_{ i }\in { X }^{ + } }^{  }{ { x }_{ i } } \quad (mean\quad vector)$$
 
 $$\Sigma \quad =\quad \frac { 1 }{ n } \sum _{ { x }_{ i }\in { X }^{ + } }^{  }{ ({ x }_{ i }-\mu ){ ({ x }_{ i }-\mu ) }^{ T } } \quad (covariance\quad matrix)$$
-
 </center>
 
 Gaussian 분포는 Covariance type에 따라 모양이 변합니다. 
