@@ -455,8 +455,7 @@ $$max\;L=\sum_{i=1}^l\alpha_i\mathbf{\Phi(\mathbf{X_i})}\cdot\mathbf{\Phi(\mathb
 
 <center>
 
-$min\;L =\sum_{i=1}^l\sum_{i=1}^l\alpha_i\alpha_j\mathbf{\Phi(\mathbf{X_i})}\cdot\mathbf{\Phi(\mathbf{X_j})}-\sum_{i=1}^l\alpha_i\mathbf{\Phi(\mathbf{X_i})}\cdot\mathbf{\Phi(\mathbf{X_i})} \qquad (0\le\alpha_i\le C)$
-
+$$min\;L =\sum_{i=1}^l\sum_{i=1}^l\alpha_i\alpha_j\mathbf{\Phi(\mathbf{X_i})}\cdot\mathbf{\Phi(\mathbf{X_j})}-\sum_{i=1}^l\alpha_i\mathbf{\Phi(\mathbf{X_i})}\cdot\mathbf{\Phi(\mathbf{X_i})} \qquad (0\le\alpha_i\le C)$$
 </center>
 
 따라서 $||w||=1$인 경우, SVDD와 one-class SVM은 같은 알고리즘이 되게 됩니다.
