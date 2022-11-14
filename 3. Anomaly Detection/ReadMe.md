@@ -417,7 +417,7 @@ $$f(\mathbf{X})=sign(R^2-\lVert \mathbf{\Phi(\mathbf{X_i})-\mathbf{a}} \rVert^2)
 - Primal Lagrangian problem
 
 <center>
-$$L=R^2 + C\sum_{i=1}^l\xi_i- \sum_{i=1}^l\alpha_i(R^2+\xi_i-(\mathbf{\Phi(\mathbf{X_i})\mathbf{\Phi(\mathbf{X_i})-2\cdot a\cdot \mathbf{\Phi(\mathbf{X_i})+a\cdot a}}}))-\sum_{i=1}^l\beta_i\xi_i(7)\\
+$L=R^2 + C\sum_{i=1}^l\xi_i- \sum_{i=1}^l\alpha_i(R^2+\xi_i-(\mathbf{\Phi(\mathbf{X_i})\mathbf{\Phi(\mathbf{X_i})-2\cdot a\cdot \mathbf{\Phi(\mathbf{X_i})+a\cdot a}}}))-\sum_{i=1}^l\beta_i\xi_i(7)\\
 
 \alpha_i \ge0, \; \beta_i \ge0$$
 
