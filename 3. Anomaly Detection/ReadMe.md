@@ -402,7 +402,7 @@ SVDD의 수식은 다음과 같습니다.
 
 <center>
 
-$ min_{R,\mathbf{a},\xi_i} R^2 + C\sum_{i=1}^l\xi_i\\ $
+$min_{R,\mathbf{a},\xi_i} R^2 + C\sum_{i=1}^l\xi_i\\$
 
 $s.t. \lVert \mathbf{\Phi(\mathbf{X_i})-\mathbf{a}} \rVert^2 \le R^2+\xi_i, \quad \xi_i\ge0,\; \forall i$
 
@@ -423,7 +423,7 @@ $f(\mathbf{X})=sign(R^2-\lVert \mathbf{\Phi(\mathbf{X_i})-\mathbf{a}} \rVert^2)$
 $L=R^2 + C\sum_{i=1}^l\xi_i- \sum_{i=1}^l\alpha_i(R^2+\xi_i-(\mathbf{\Phi(\mathbf{X_i})\mathbf{\Phi(\mathbf{X_i})-2\cdot a\cdot \mathbf{\Phi(\mathbf{X_i})+a\cdot a}}}))-\sum_{i=1}^l\beta_i\xi_i\\$
 
 $\alpha_i \ge0, \; \beta_i \ge0$
-  
+
 </center>
 
 - KKT condition
@@ -443,13 +443,13 @@ $\frac{\partial L}{\partial \xi_i}=C-\alpha_i-\beta_i=0 \quad \forall i$
 
 <center>
 
-$$L=R^2 + C\sum_{i=1}^l\xi_i- \sum_{i=1}^l\alpha_i(R^2+\xi_i-(\mathbf{\Phi(\mathbf{X_i})\mathbf{\Phi(\mathbf{X_i})-2\cdot a\cdot \mathbf{\Phi(\mathbf{X_i})+a\cdot a}}}))-\sum_{i=1}^l\beta_i\xi_i\\$$
+$L=R^2 + C\sum_{i=1}^l\xi_i- \sum_{i=1}^l\alpha_i(R^2+\xi_i-(\mathbf{\Phi(\mathbf{X_i})\mathbf{\Phi(\mathbf{X_i})-2\cdot a\cdot \mathbf{\Phi(\mathbf{X_i})+a\cdot a}}}))-\sum_{i=1}^l\beta_i\xi_i\\$
 
-$$=R^2-R^2\sum_{i=1}^l\alpha_i+\sum_{i=1}^l\xi_i(C-\alpha_i-\beta_i)\\$$
+$=R^2-R^2\sum_{i=1}^l\alpha_i+\sum_{i=1}^l\xi_i(C-\alpha_i-\beta_i)\\$
 
-$$+\sum_{i=1}^l\alpha_i\mathbf{\Phi(\mathbf{X_i})}\cdot\mathbf{\Phi(\mathbf{X_i})}-2\sum_{i=1}^l\sum_{i=1}^l\alpha_i\alpha_j\mathbf{\Phi(\mathbf{X_i})}\cdot\mathbf{\Phi(\mathbf{X_j})}\\+\sum_{i=1}^l\sum_{i=1}^l\alpha_i\alpha_j\mathbf{\Phi(\mathbf{X_i})}\cdot\mathbf{\Phi(\mathbf{X_j})}$$
+$+\sum_{i=1}^l\alpha_i\mathbf{\Phi(\mathbf{X_i})}\cdot\mathbf{\Phi(\mathbf{X_i})}-2\sum_{i=1}^l\sum_{i=1}^l\alpha_i\alpha_j\mathbf{\Phi(\mathbf{X_i})}\cdot\mathbf{\Phi(\mathbf{X_j})}\\+\sum_{i=1}^l\sum_{i=1}^l\alpha_i\alpha_j\mathbf{\Phi(\mathbf{X_i})}\cdot\mathbf{\Phi(\mathbf{X_j})}$
 
-$$max\;L=\sum_{i=1}^l\alpha_i\mathbf{\Phi(\mathbf{X_i})}\cdot\mathbf{\Phi(\mathbf{X_i})}-\sum_{i=1}^l\sum_{i=1}^l\alpha_i\alpha_j\mathbf{\Phi(\mathbf{X_i})}\cdot\mathbf{\Phi(\mathbf{X_j})}\qquad (0\le\alpha_i\le C)\\$$
+$max\;L=\sum_{i=1}^l\alpha_i\mathbf{\Phi(\mathbf{X_i})}\cdot\mathbf{\Phi(\mathbf{X_i})}-\sum_{i=1}^l\sum_{i=1}^l\alpha_i\alpha_j\mathbf{\Phi(\mathbf{X_i})}\cdot\mathbf{\Phi(\mathbf{X_j})}\qquad (0\le\alpha_i\le C)\\$
 
 </center>
 
@@ -457,12 +457,11 @@ $$max\;L=\sum_{i=1}^l\alpha_i\mathbf{\Phi(\mathbf{X_i})}\cdot\mathbf{\Phi(\mathb
 
 <center>
 
-$$min\;L =\sum_{i=1}^l\sum_{i=1}^l\alpha_i\alpha_j\mathbf{\Phi(\mathbf{X_i})}\cdot\mathbf{\Phi(\mathbf{X_j})}-\sum_{i=1}^l\alpha_i\mathbf{\Phi(\mathbf{X_i})}\cdot\mathbf{\Phi(\mathbf{X_i})} \qquad (0\le\alpha_i\le C)$$
+$min\;L =\sum_{i=1}^l\sum_{i=1}^l\alpha_i\alpha_j\mathbf{\Phi(\mathbf{X_i})}\cdot\mathbf{\Phi(\mathbf{X_j})}-\sum_{i=1}^l\alpha_i\mathbf{\Phi(\mathbf{X_i})}\cdot\mathbf{\Phi(\mathbf{X_i})} \qquad (0\le\alpha_i\le C)$
 
 </center>
 
 따라서 $||w||=1$인 경우, SVDD와 one-class SVM은 같은 알고리즘이 되게 됩니다.
-
 
 ## Isolation Forest
 
