@@ -87,7 +87,7 @@ $$g(x|{ \mu  }_{ m },{ \sum   }_{ m })=\frac { 1 }{ { (2\pi ) }^{ d/2 }{ |{ \sum
 
 <center>
   
-$\lambda = \lbrace{w_m, \mu_m,\sum_m}\rbrace, m=1, \cdot \cdot \cdot, M$
+$$\lambda = \lbrace{w_m, \mu_m,\sum_m}\rbrace, m=1, \cdot \cdot \cdot, M$$
 
 </center>
 
