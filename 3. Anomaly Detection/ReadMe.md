@@ -411,18 +411,16 @@ $$s.t. \lVert \mathbf{\Phi(\mathbf{X_i})-\mathbf{a}} \rVert^2 \le R^2+\xi_i, \qu
 - Desicion function
 
 <center>
-
-$f(\mathbf{X})=sign(R^2-\lVert \mathbf{\Phi(\mathbf{X_i})-\mathbf{a}} \rVert^2)$
-
+$$f(\mathbf{X})=sign(R^2-\lVert \mathbf{\Phi(\mathbf{X_i})-\mathbf{a}} \rVert^2)$$
 </center>
 
 - Primal Lagrangian problem
 
 <center>
+$$L=R^2 + C\sum_{i=1}^l\xi_i- \sum_{i=1}^l\alpha_i(R^2+\xi_i-(\mathbf{\Phi(\mathbf{X_i})\mathbf{\Phi(\mathbf{X_i})-2\cdot a\cdot \mathbf{\Phi(\mathbf{X_i})+a\cdot a}}}))-\sum_{i=1}^l\beta_i\xi_i(7)\\
 
-$L=R^2 + C\sum_{i=1}^l\xi_i- \sum_{i=1}^l\alpha_i(R^2+\xi_i-(\mathbf{\Phi(\mathbf{X_i})\mathbf{\Phi(\mathbf{X_i})-2\cdot a\cdot \mathbf{\Phi(\mathbf{X_i})+a\cdot a}}}))-\sum_{i=1}^l\beta_i\xi_i\\$
+\alpha_i \ge0, \; \beta_i \ge0$$
 
-$\alpha_i \ge0, \; \beta_i \ge0$
 
 </center>
 
@@ -430,12 +428,12 @@ $\alpha_i \ge0, \; \beta_i \ge0$
 
 <center>
 
-$\frac{\partial L}{\partial R}=2R-2R\sum_{i=1}^l\alpha_i=0\quad \Rightarrow \quad \sum_{i=1}^l\alpha_i=1$
+$$\frac{\partial L}{\partial R}=2R-2R\sum_{i=1}^l\alpha_i=0\quad \Rightarrow \quad \sum_{i=1}^l\alpha_i=1$$
 
 
-$\frac{\partial L}{\partial \mathbf{a}}=2\sum_{i=1}^l\alpha_i\cdot\mathbf{\Phi(\mathbf{X_i})-2\mathbf{a}\cdot\sum_{i=1}^l\alpha_i=0}\quad \Rightarrow\quad \mathbf{a}=\sum_{i=1}^l\alpha_i\cdot\mathbf{\Phi(\mathbf{X_i})}\\$
+$$\frac{\partial L}{\partial \mathbf{a}}=2\sum_{i=1}^l\alpha_i\cdot\mathbf{\Phi(\mathbf{X_i})-2\mathbf{a}\cdot\sum_{i=1}^l\alpha_i=0}\quad \Rightarrow\quad \mathbf{a}=\sum_{i=1}^l\alpha_i\cdot\mathbf{\Phi(\mathbf{X_i})}\\$$
 
-$\frac{\partial L}{\partial \xi_i}=C-\alpha_i-\beta_i=0 \quad \forall i$
+$$\frac{\partial L}{\partial \xi_i}=C-\alpha_i-\beta_i=0 \quad \forall i$$
 
 </center>
 
@@ -443,13 +441,13 @@ $\frac{\partial L}{\partial \xi_i}=C-\alpha_i-\beta_i=0 \quad \forall i$
 
 <center>
 
-$L=R^2 + C\sum_{i=1}^l\xi_i- \sum_{i=1}^l\alpha_i(R^2+\xi_i-(\mathbf{\Phi(\mathbf{X_i})\mathbf{\Phi(\mathbf{X_i})-2\cdot a\cdot \mathbf{\Phi(\mathbf{X_i})+a\cdot a}}}))-\sum_{i=1}^l\beta_i\xi_i\\$
+$$L=R^2 + C\sum_{i=1}^l\xi_i- \sum_{i=1}^l\alpha_i(R^2+\xi_i-(\mathbf{\Phi(\mathbf{X_i})\mathbf{\Phi(\mathbf{X_i})-2\cdot a\cdot \mathbf{\Phi(\mathbf{X_i})+a\cdot a}}}))-\sum_{i=1}^l\beta_i\xi_i\\$$
 
-$=R^2-R^2\sum_{i=1}^l\alpha_i+\sum_{i=1}^l\xi_i(C-\alpha_i-\beta_i)\\$
+$$=R^2-R^2\sum_{i=1}^l\alpha_i+\sum_{i=1}^l\xi_i(C-\alpha_i-\beta_i)\\$$
 
-$+\sum_{i=1}^l\alpha_i\mathbf{\Phi(\mathbf{X_i})}\cdot\mathbf{\Phi(\mathbf{X_i})}-2\sum_{i=1}^l\sum_{i=1}^l\alpha_i\alpha_j\mathbf{\Phi(\mathbf{X_i})}\cdot\mathbf{\Phi(\mathbf{X_j})}\\+\sum_{i=1}^l\sum_{i=1}^l\alpha_i\alpha_j\mathbf{\Phi(\mathbf{X_i})}\cdot\mathbf{\Phi(\mathbf{X_j})}$
+$$+\sum_{i=1}^l\alpha_i\mathbf{\Phi(\mathbf{X_i})}\cdot\mathbf{\Phi(\mathbf{X_i})}-2\sum_{i=1}^l\sum_{i=1}^l\alpha_i\alpha_j\mathbf{\Phi(\mathbf{X_i})}\cdot\mathbf{\Phi(\mathbf{X_j})}\\+\sum_{i=1}^l\sum_{i=1}^l\alpha_i\alpha_j\mathbf{\Phi(\mathbf{X_i})}\cdot\mathbf{\Phi(\mathbf{X_j})}$$
 
-$max\;L=\sum_{i=1}^l\alpha_i\mathbf{\Phi(\mathbf{X_i})}\cdot\mathbf{\Phi(\mathbf{X_i})}-\sum_{i=1}^l\sum_{i=1}^l\alpha_i\alpha_j\mathbf{\Phi(\mathbf{X_i})}\cdot\mathbf{\Phi(\mathbf{X_j})}\qquad (0\le\alpha_i\le C)\\$
+$$max\;L=\sum_{i=1}^l\alpha_i\mathbf{\Phi(\mathbf{X_i})}\cdot\mathbf{\Phi(\mathbf{X_i})}-\sum_{i=1}^l\sum_{i=1}^l\alpha_i\alpha_j\mathbf{\Phi(\mathbf{X_i})}\cdot\mathbf{\Phi(\mathbf{X_j})}\qquad (0\le\alpha_i\le C)\\$$
 
 </center>
 
