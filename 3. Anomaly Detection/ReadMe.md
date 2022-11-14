@@ -83,6 +83,10 @@ $$p(x|\lambda )=\sum _{ m=1 }^{ M }{ { w }_{ m }g(x|{ \mu  }_{ m },{\sum} _{ m }
 
 $$g(x|{ \mu  }_{ m },{ \sum   }_{ m })=\frac { 1 }{ { (2\pi ) }^{ d/2 }{ |{ \sum   }_{ m }| }^{ 1/2 } } exp[\frac { 1 }{ 2 } (x-{ \mu  }_{ m })^{ T }{ { \sum   } }_{ m }^{ -1 }(x-{ \mu  }_{ m })]$$
 
+</center>  
+
+<center>
+  
 $\lambda = \lbrace{w_m, \mu_m,\sum_m}\rbrace, m=1, \cdot \cdot \cdot, M$
 
 </center>
