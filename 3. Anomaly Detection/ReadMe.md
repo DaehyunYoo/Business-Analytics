@@ -9,6 +9,8 @@ Anomaly Data는 Novel Data와 마찬가지로 이상치 데이터를 뜻합니�
 <img src="https://postfiles.pstatic.net/MjAyMjExMTRfMTU3/MDAxNjY4MzkzNzk4ODA1.JPnA7MRzlMmtkATC3zU-zWUT9lcwzij0SOuQ-uo2GpQg.Hs1zLo4AOfolHvyzFGJ78SoIlon3Rt4XICoj6AWeBawg.PNG.dhyoo9701/1.png?type=w773" height=200>
 </center>
 
+<p align="center"><img src="https://postfiles.pstatic.net/MjAyMjExMTRfMTU3/MDAxNjY4MzkzNzk4ODA1.JPnA7MRzlMmtkATC3zU-zWUT9lcwzij0SOuQ-uo2GpQg.Hs1zLo4AOfolHvyzFGJ78SoIlon3Rt4XICoj6AWeBawg.PNG.dhyoo9701/1.png?type=w773" height=200"></p>
+
 Anomaly Detection은 한쪽 범주만 학습하여 정상 범주에 포함되지 않으면 이상치로 분류하고 Classification은 양쪽 범주를 모두 학습합니다. 그런데 이 기준은 보통 범주간 불균형이 심한 약 0.1:99.9정도로 심한 경우나, 수가 적은 클래스가 충분하지 않다면 Anomaly Detection에 해당됩니다. 반대로 class imbalance가 8:2, 7:3이나 애매한 정도라면 class imbalance를 해결할 수 있는 방법을 찾고 classification에 해당됩니다. Classification의 성능이 보다 우수할 가능성이 높습니다. 
 
 # Density-based Anomaly Detection
