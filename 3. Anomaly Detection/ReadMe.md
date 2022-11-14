@@ -402,9 +402,9 @@ SVDD의 수식은 다음과 같습니다.
 
 <center>
 
-$$min_{R,\mathbf{a},\xi_i} R^2 + C\sum_{i=1}^l\xi_i\\$$
+$min_{R,\mathbf{a},\xi_i} R^2 + C\sum_{i=1}^l\xi_i\\$
 
-$$s.t. \lVert \mathbf{\Phi(\mathbf{X_i})-\mathbf{a}} \rVert^2 \le R^2+\xi_i, \quad \xi_i\ge0,\; \forall i$$
+$s.t. \lVert \mathbf{\Phi(\mathbf{X_i})-\mathbf{a}} \rVert^2 \le R^2+\xi_i, \quad \xi_i\ge0,\; \forall i$
 
 </center>
 
@@ -412,7 +412,7 @@ $$s.t. \lVert \mathbf{\Phi(\mathbf{X_i})-\mathbf{a}} \rVert^2 \le R^2+\xi_i, \qu
 
 <center>
 
-$$f(\mathbf{X})=sign(R^2-\lVert \mathbf{\Phi(\mathbf{X_i})-\mathbf{a}} \rVert^2)$$
+$f(\mathbf{X})=sign(R^2-\lVert \mathbf{\Phi(\mathbf{X_i})-\mathbf{a}} \rVert^2)$
 
 </center>
 
@@ -420,20 +420,20 @@ $$f(\mathbf{X})=sign(R^2-\lVert \mathbf{\Phi(\mathbf{X_i})-\mathbf{a}} \rVert^2)
 
 <center>
 
-$$L=R^2 + C\sum_{i=1}^l\xi_i- \sum_{i=1}^l\alpha_i(R^2+\xi_i-(\mathbf{\Phi(\mathbf{X_i})\mathbf{\Phi(\mathbf{X_i})-2\cdot a\cdot \mathbf{\Phi(\mathbf{X_i})+a\cdot a}}}))-\sum_{i=1}^l\beta_i\xi_i\\$$
+$L=R^2 + C\sum_{i=1}^l\xi_i- \sum_{i=1}^l\alpha_i(R^2+\xi_i-(\mathbf{\Phi(\mathbf{X_i})\mathbf{\Phi(\mathbf{X_i})-2\cdot a\cdot \mathbf{\Phi(\mathbf{X_i})+a\cdot a}}}))-\sum_{i=1}^l\beta_i\xi_i\\$
 
-$$\alpha_i \ge0, \; \beta_i \ge0$$
-
+$\alpha_i \ge0, \; \beta_i \ge0$
+  
 </center>
 
 - KKT condition
 
 <center>
 
-$$\frac{\partial L}{\partial R}=2R-2R\sum_{i=1}^l\alpha_i=0\quad \Rightarrow \quad \sum_{i=1}^l\alpha_i=1$$
+$\frac{\partial L}{\partial R}=2R-2R\sum_{i=1}^l\alpha_i=0\quad \Rightarrow \quad \sum_{i=1}^l\alpha_i=1$
 
 
-$$\frac{\partial L}{\partial \mathbf{a}}=2\sum_{i=1}^l\alpha_i\cdot\mathbf{\Phi(\mathbf{X_i})-2\mathbf{a}\cdot\sum_{i=1}^l\alpha_i=0}\quad \Rightarrow\quad \mathbf{a}=\sum_{i=1}^l\alpha_i\cdot\mathbf{\Phi(\mathbf{X_i})}\\$$
+$\frac{\partial L}{\partial \mathbf{a}}=2\sum_{i=1}^l\alpha_i\cdot\mathbf{\Phi(\mathbf{X_i})-2\mathbf{a}\cdot\sum_{i=1}^l\alpha_i=0}\quad \Rightarrow\quad \mathbf{a}=\sum_{i=1}^l\alpha_i\cdot\mathbf{\Phi(\mathbf{X_i})}\\$
 
 $\frac{\partial L}{\partial \xi_i}=C-\alpha_i-\beta_i=0 \quad \forall i$
 
