@@ -383,8 +383,7 @@ Case 3는 Case 2와 마찬가지로 데이터포인트가 support vector이며, 
 
 $\upsilon$의 역할은 다음과 같습니다. 
 1. hyperplane 밖에 있을 수 있는 최대한의 support vector의 개수를 정해주는 비율은 $\alpha_i \leq\frac{1}{vl}$이므로 $\alpha_i$의 최대값은 $\frac{1}{vl}$입니다.
-2. 데이터가 가져야하는 최소한의 support vector의 개수를 정해주는 비율입니다. 첫번째 역할의 연장선에서 설명할 수 있는데, $\alpha_i$들이 모두 $\frac{1}{vl}$인 경우가 support vector의 전체 개수는 가장 적은 경우라고 할 수 있습니다. 하나라도 $\alpha_i<\frac{1}{vl}$인 경우가 존재한다면 $\sum_{i=l}^l\alpha_i=1
-$을 만족하기 위해 그 차이를 메우기 위한 0이 아닌 $\alpha_i$들이 존재해야 하기 때문입니다. 
+2. 데이터가 가져야하는 최소한의 support vector의 개수를 정해주는 비율입니다. 첫번째 역할의 연장선에서 설명할 수 있는데, $\alpha_i$들이 모두 $\frac{1}{vl}$인 경우가 support vector의 전체 개수는 가장 적은 경우라고 할 수 있습니다. 하나라도 $\alpha_i<\frac{1}{vl}$인 경우가 존재한다면 $\sum_{i=l}^l\alpha_i=1$을 만족하기 위해 그 차이를 메우기 위한 0이 아닌 $\alpha_i$들이 존재해야 하기 때문입니다. 
 3. 최소 support vector가 $vl$개 있어야 하는 것을 의미합니다. 따라서 정상 영역의 범위를 넓게 만들고 싶다면 $\upsilon$을 작게 잡아야합니다. 아래 예시 그림을 보면 왼쪽의 경우 정상영역의 범위가 오른쪽보다 넓게 형성되어 있는데 왼쪽의 경우가 오른쪽보다 $upsilon$을 더 작게 잡았다고 할 수 있습니다.
 
 One-class SVM도 SVM과 마찬가지로 kernel함수를 사용할 수 있습니다. kernel trick을 적용해 고차원에 매핍해 hyperplane을 찾을 수 있습니다. 
