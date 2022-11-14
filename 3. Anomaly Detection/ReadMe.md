@@ -402,7 +402,7 @@ SVDD의 수식은 다음과 같습니다.
 
 <center>
 
-$min_{R,\mathbf{a},\xi_i} R^2 + C\sum_{i=1}^l\xi_i\\$
+$ min_{R,\mathbf{a},\xi_i} R^2 + C\sum_{i=1}^l\xi_i\\ $
 
 $s.t. \lVert \mathbf{\Phi(\mathbf{X_i})-\mathbf{a}} \rVert^2 \le R^2+\xi_i, \quad \xi_i\ge0,\; \forall i$
 
