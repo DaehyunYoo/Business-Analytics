@@ -28,6 +28,7 @@ Gaussian Density Estimation은 모든 데이터가 하나의 Gaussian(정규)분
 <img src="https://postfiles.pstatic.net/MjAyMjExMTRfNjMg/MDAxNjY4MzkzNzk4ODA3.6-GosS-N4Qlhl0oxUj41_8g0B7rOGe2zvMA5nTuR3cIg.nsPXX1TRdK_Jb8nI4EGeyDWkYDF3JdtF4_OjWc0qy7Ig.PNG.dhyoo9701/3.png?type=w773" height=200>
 </center>
 
+<center>
 $p(x)\quad =\quad \frac { 1 }{ { 2\pi  }^{ { d }/{ 2 } }{ \Sigma  }^{ { 1 }/{ 2 } } } exp\left[ \frac { 1 }{ 2 } { (x-\mu ) }^{ T }{ \Sigma  }^{ -1 }(x-\mu ) \right]$
 
 $$\mu \quad =\quad \frac { 1 }{ n } \sum _{ { x }_{ i }\in { X }^{ + } }^{  }{ { x }_{ i } } \quad (mean\quad vector)$$
@@ -74,16 +75,16 @@ MoG는 데이터는 여러 개의 Gaussian 분포의 혼합으로 이루어져 �
 - MoG에서 데이터가 normal일 확률 
 
 <center>
-$p(x|\lambda )=\sum _{ m=1 }^{ M }{ { w }_{ m }g(x|{ \mu  }_{ m },{\sum} _{ m }  } )$
+$$p(x|\lambda )=\sum _{ m=1 }^{ M }{ { w }_{ m }g(x|{ \mu  }_{ m },{\sum} _{ m }  } )$$
 </center>
 
 - MoG에서 각 Gaussian Distribution의 g와 lambda
 
 <center>
 
-$g(x|{ \mu  }_{ m },{ \sum   }_{ m })=\frac { 1 }{ { (2\pi ) }^{ d/2 }{ |{ \sum   }_{ m }| }^{ 1/2 } } exp[\frac { 1 }{ 2 } (x-{ \mu  }_{ m })^{ T }{ { \sum   } }_{ m }^{ -1 }(x-{ \mu  }_{ m })]$
+$$g(x|{ \mu  }_{ m },{ \sum   }_{ m })=\frac { 1 }{ { (2\pi ) }^{ d/2 }{ |{ \sum   }_{ m }| }^{ 1/2 } } exp[\frac { 1 }{ 2 } (x-{ \mu  }_{ m })^{ T }{ { \sum   } }_{ m }^{ -1 }(x-{ \mu  }_{ m })]$$
 
-$\lambda =\left\{ { w }_{ m },{ \mu  }_{ m },{ \sum   }_{ m } \right\} ,m=1,\cdots ,M$
+$$\lambda =\left\{ { w }_{ m },{ \mu  }_{ m },{ \sum   }_{ m } \right\} ,m=1,\cdots ,M$$
 
 </center>
 
@@ -95,7 +96,7 @@ MoG(Mixture of Gaussian)모델을 사용하기 위해서는 EM Algorithm(Expecta
 
 <center>
 
-$p(m|{ x }_{ i },\lambda )=\frac { { w }_{ m }g({ x }_{ t }|{ \mu  }_{ m },{ m }_{ m }) }{ \sum _{ k=1 }^{ M }{ { w }_{ k }g({ x }_{ i }|{ \mu  }_{ k },{ m }_{ k }) }  }$
+$$p(m|{ x }_{ i },\lambda )=\frac { { w }_{ m }g({ x }_{ t }|{ \mu  }_{ m },{ m }_{ m }) }{ \sum _{ k=1 }^{ M }{ { w }_{ k }g({ x }_{ i }|{ \mu  }_{ k },{ m }_{ k }) }  }$$
 
 </center>
 
@@ -103,11 +104,11 @@ $p(m|{ x }_{ i },\lambda )=\frac { { w }_{ m }g({ x }_{ t }|{ \mu  }_{ m },{ m }
 
 <center>
 
-${ w }_{ m }^{ (new) }=\frac { 1 }{ N } \sum _{ i=1 }^{ N }{ p(m|{ x }_{ i },\lambda ) }$
+$${ w }_{ m }^{ (new) }=\frac { 1 }{ N } \sum _{ i=1 }^{ N }{ p(m|{ x }_{ i },\lambda ) }$$
 
-${ \mu  }_{ m }^{ (new) }=\frac { p(m|{ x }_{ i },\lambda ){ x }_{ i } }{ \sum _{ i=1 }^{ N }{ p(m|{ x }_{ i },\lambda ) }  }$
+$${ \mu  }_{ m }^{ (new) }=\frac { p(m|{ x }_{ i },\lambda ){ x }_{ i } }{ \sum _{ i=1 }^{ N }{ p(m|{ x }_{ i },\lambda ) }  }$$
 
-${ \sigma  }_{ m }^{ 2(new) }=\frac { \sum _{ i=1 }^{ N }{ p(m|{ x }_{ i },\lambda ){ x }_{ i }^{ 2 } }  }{ \sum _{ i=1 }^{ N }{ p(m|{ x }_{ i },\lambda ) }  } -{ \mu  }_{ m }^{ 2(new) }$
+$${ \sigma  }_{ m }^{ 2(new) }=\frac { \sum _{ i=1 }^{ N }{ p(m|{ x }_{ i },\lambda ){ x }_{ i }^{ 2 } }  }{ \sum _{ i=1 }^{ N }{ p(m|{ x }_{ i },\lambda ) }  } -{ \mu  }_{ m }^{ 2(new) }$$
 
 </center>
 
@@ -130,7 +131,7 @@ Kernel density Estimation은 데이터가 Gaussian 분포와 같은 특정 분�
 
 <center>
 
-$P=\int _{ R }^{  }{ p({ x }^{ \prime  })dx^{ \prime  } }$
+$$P=\int _{ R }^{  }{ p({ x }^{ \prime  })dx^{ \prime  } }$$
 
 </center>
 
@@ -152,11 +153,11 @@ hypercube안의 샘플 개수를 세는 수식은 다음과 같습니다. k는 h
 
 <center>
 
-$% <![CDATA[
+$$% <![CDATA[
 % <![CDATA[
-K({ u })=\left\{ \begin{array}{lll} 1, & |u_{ i }|\le 1/2, & i=1,...,D \\ 0, & otherwise & \;  \end{array} \right. \qquad %]]> %]]>$
+K({ u })=\left\{ \begin{array}{lll} 1, & |u_{ i }|\le 1/2, & i=1,...,D \\ 0, & otherwise & \;  \end{array} \right. \qquad %]]> %]]>$$
 
-$k=\sum _{ i=1 }^{ N }{ K(\frac { { x }^{ i }-x }{ h } ) }$
+$$k=\sum _{ i=1 }^{ N }{ K(\frac { { x }^{ i }-x }{ h } ) }$$
 
 </center>
 
@@ -164,7 +165,7 @@ Parzen window를 통해 데이터의 밀도를 추정하는 함수는 다음과 
 
 <center>
 
-$p(x)=\frac { 1 }{ N{ h }^{ d } } \sum _{ i=1 }^{ N }{ K(\frac { { x }^{ i }-x }{ h } ) }$
+$$p(x)=\frac { 1 }{ N{ h }^{ d } } \sum _{ i=1 }^{ N }{ K(\frac { { x }^{ i }-x }{ h } ) }$$
 
 </center>
 
@@ -200,9 +201,7 @@ $N_k(p)$는 k-distance안에 들어오는 object의 집합을 나타내며 이�
 
 3. reachability distance  
 A와 B까지 거리와 k-distance중 큰 값을 사용하는 것입니다.   
-$
-reachability - distance_k(A,B) = max{k -distance(B), dist(A,B)}
-$
+$reachability - distance_k(A,B) = max{k -distance(B), dist(A,B)}$
 
 <center>
 <img src="https://postfiles.pstatic.net/MjAyMjExMTRfMTMz/MDAxNjY4MzkzNzk5MzI1.JCKL_zNeghrcxSUefYGG6dYhtspjWUMYFBTLvuxW8YIg.X8cJigonhAefrgAHjQTJy1tVxhMXA8VIFfgLaOhX_zUg.PNG.dhyoo9701/15.png?type=w773">
@@ -210,7 +209,7 @@ $
 
 4. Local reachability density of an object p  
 
-$lrd_k(p)=[{\frac{N_k(p)}{\sum_{o\in N_k(p)}(reah\_dist(p,o))}}]$  
+$$lrd_k(p)=[{\frac{N_k(p)}{\sum_{o\in N_k(p)}(reah\_dist(p,o))}}]$$  
 
 분자는 k-distance안의 개체 수이고, 분모는 p에서 다른 오브젝트까지의 reachability distance입니다. 즉, 주변의 dense를 고려한 점 p에서의 neighbor들과의 적당한 거리를 나타낼 수 있습니다.    
 
@@ -223,7 +222,7 @@ case2의 경우, 평균거리는 상당히 크기 때문에 lrd는 작은 값을
 
 1. Local outlier factor of an object p  
 
-$LOF_k(p)=\frac{\sum_{o\in N_k(p)}\frac{lrd(o)}{lrd(p)}}{N_k(p)}$
+$$LOF_k(p)=\frac{\sum_{o\in N_k(p)}\frac{lrd(o)}{lrd(p)}}{N_k(p)}$$
 
 주변의 점들 o와의 dense(lrd)를 비교하여 평균을 낸 것이다. p의 평균거리/o의 평균거리를 구한고 이를 평균낸 것입니다. 
 
@@ -247,14 +246,14 @@ Novelty score를 위한 거리정보는 다음과 같습니다.
 가장 먼거리를 novelty score로 표현합니다.
 
 <center>
-$d_{max}^k = k(x) = ||x - z_k(x)||$
+$$d_{max}^k = k(x) = ||x - z_k(x)||$$
 </center>
 
 - Average distance to the k-nearest neighbors
 전체 거리의 평균을 novelty score로 표현합니다.
 
 <center>
-$d_{avg}^k = \gamma(x) = \frac{1}{k}\displaystyle\sum_{j=1}^{k}{||x-z_j(x)||}$
+$$d_{avg}^k = \gamma(x) = \frac{1}{k}\displaystyle\sum_{j=1}^{k}{||x-z_j(x)||}$$
 </center>
 
 - Distance to the mean of the k-nearest neighbors
@@ -262,7 +261,7 @@ $d_{avg}^k = \gamma(x) = \frac{1}{k}\displaystyle\sum_{j=1}^{k}{||x-z_j(x)||}$
 
 <center>
 
-$d_{mean}^k = \delta(x) = ||x-\frac{1}{k}\displaystyle\sum_{j=1}^{k}{z_j(x)||}$
+$$d_{mean}^k = \delta(x) = ||x-\frac{1}{k}\displaystyle\sum_{j=1}^{k}{z_j(x)||}$$
 
 </center>
 
@@ -279,14 +278,14 @@ $d_{mean}^k = \delta(x) = ||x-\frac{1}{k}\displaystyle\sum_{j=1}^{k}{z_j(x)||}$
 - Average distance to the k-nearest neighbors
 <center>
 
-$d_{avg}^k = \gamma(x) = \frac{1}{k}\displaystyle\sum_{j=1}^{k}{||x-z_j(x)||}$
+$$d_{avg}^k = \gamma(x) = \frac{1}{k}\displaystyle\sum_{j=1}^{k}{||x-z_j(x)||}$$
 
 </center>
 
 - Convex distance to the k-nearest neighbors
 <center>
 
-$d_{c-hull}^k = ||x-\displaystyle\sum_{j=1}^{k}{w_iz_i(x)||}$
+$$d_{c-hull}^k = ||x-\displaystyle\sum_{j=1}^{k}{w_iz_i(x)||}$$
 
 </center>
 
@@ -294,7 +293,7 @@ $d_{c-hull}^k = ||x-\displaystyle\sum_{j=1}^{k}{w_iz_i(x)||}$
 
 <center>
 
-$d_{hybrid}^k = d_{avg}^k  \times \frac{2}{1+exp(-d_{c-hull}^k)}$
+$$d_{hybrid}^k = d_{avg}^k  \times \frac{2}{1+exp(-d_{c-hull}^k)}$$
 
 </center>
 
@@ -361,9 +360,9 @@ One-class SVM의 수식은 다음과 같습니다. 기존의 SVM 목적식에서
 
 <center>
 
-$min_w  \frac{1}{2}\ \lVert w\rVert ^2+ \frac{1}{\nu l}\sum_{i=1}^l\xi_i-\rho\\
+$$min_w  \frac{1}{2}\ \lVert w\rVert ^2+ \frac{1}{\nu l}\sum_{i=1}^l\xi_i-\rho\\
 s.t. \quad \mathbf{W}\cdot\boldsymbol{\Phi}(\mathbf{X_i})\ge\rho-\xi_i\\
-i=1,2,...,l, \qquad \xi\ge0\\$
+i=1,2,...,l, \qquad \xi\ge0\\$$
 
 </center>
 
@@ -371,7 +370,7 @@ i=1,2,...,l, \qquad \xi\ge0\\$
 
 <center>
 
-$f(\mathbf{X_i})= sign(\mathbf{W}\cdot\mathbf{\Phi(\mathbf{X_i})-\rho})$
+$$f(\mathbf{X_i})= sign(\mathbf{W}\cdot\mathbf{\Phi(\mathbf{X_i})-\rho})$$
 
 
 </center>
@@ -380,7 +379,7 @@ $f(\mathbf{X_i})= sign(\mathbf{W}\cdot\mathbf{\Phi(\mathbf{X_i})-\rho})$
 
 <center>
 
-$L=\frac{1}{2}\ \lVert w\rVert ^2+ \frac{1}{\nu l}\sum_{i=1}^l\xi_i-\rho-\sum_{i=1}^l\alpha_i(\mathbf{W}\cdot\boldsymbol{\Phi}(\mathbf{X_i})-\rho+\xi_i)-\sum_{i=1}^l\beta_i\xi_i$
+$$L=\frac{1}{2}\ \lVert w\rVert ^2+ \frac{1}{\nu l}\sum_{i=1}^l\xi_i-\rho-\sum_{i=1}^l\alpha_i(\mathbf{W}\cdot\boldsymbol{\Phi}(\mathbf{X_i})-\rho+\xi_i)-\sum_{i=1}^l\beta_i\xi_i$$
 
 </center>
 
@@ -388,10 +387,10 @@ $l, X_i$는 데이터가 주어지면 알 수 있는 값입니다. 우리가 식
 
 <center>
 
-$\frac{\partial L}{\partial \mathbf{w}}=\mathbf{w}-\sum_{i=1}^l\alpha_i\mathbf{\Phi(\mathbf{X_i})}=0\quad \Rightarrow\quad \mathbf{w}=\sum_{i=1}^l\alpha_i\mathbf{\Phi(\mathbf{X_i})}$
+$$\frac{\partial L}{\partial \mathbf{w}}=\mathbf{w}-\sum_{i=1}^l\alpha_i\mathbf{\Phi(\mathbf{X_i})}=0\quad \Rightarrow\quad \mathbf{w}=\sum_{i=1}^l\alpha_i\mathbf{\Phi(\mathbf{X_i})}$$
 
-$\frac{\partial L}{\partial \xi_i}=\frac{1}{\nu l}-\alpha_i-\beta_i=0\quad \Rightarrow\quad \alpha_i=\frac{1}{\nu l}-\beta_i   \\
-\frac{\partial L}{\partial \rho}=-1+\sum_{i=1}^l\alpha_i=0\quad \Rightarrow \quad \sum_{i=1}^l\alpha_i=1$
+$$\frac{\partial L}{\partial \xi_i}=\frac{1}{\nu l}-\alpha_i-\beta_i=0\quad \Rightarrow\quad \alpha_i=\frac{1}{\nu l}-\beta_i   \\
+\frac{\partial L}{\partial \rho}=-1+\sum_{i=1}^l\alpha_i=0\quad \Rightarrow \quad \sum_{i=1}^l\alpha_i=1$$
 
 </center>
 
@@ -399,8 +398,8 @@ primal의 목적식을 dual 형태로 바꾸게 됩니다. 이 dual을 최대화
 
 <center>
 
-$min \; L= \frac{1}{2}\sum_{i=1}^l\sum_{j=1}^l\alpha_i\alpha_j\mathbf{\Phi(\mathbf{X_i})}\cdot\mathbf{\Phi(\mathbf{X_j})} (5)\\
-s.t. \quad \sum_{i=1}^l\alpha_i =1 , \quad 0\le \alpha_i\le\frac{1}{\nu l }$
+$$min \; L= \frac{1}{2}\sum_{i=1}^l\sum_{j=1}^l\alpha_i\alpha_j\mathbf{\Phi(\mathbf{X_i})}\cdot\mathbf{\Phi(\mathbf{X_j})} (5)\\
+s.t. \quad \sum_{i=1}^l\alpha_i =1 , \quad 0\le \alpha_i\le\frac{1}{\nu l }$$
 
 </center>
 
@@ -440,9 +439,9 @@ SVDD의 수식은 다음과 같습니다.
 
 <center>
 
-$min_{R,\mathbf{a},\xi_i} R^2 + C\sum_{i=1}^l\xi_i\\$
+$$min_{R,\mathbf{a},\xi_i} R^2 + C\sum_{i=1}^l\xi_i\\$$
 
-$s.t. \lVert \mathbf{\Phi(\mathbf{X_i})-\mathbf{a}} \rVert^2 \le R^2+\xi_i, \quad \xi_i\ge0,\; \forall i$
+$$s.t. \lVert \mathbf{\Phi(\mathbf{X_i})-\mathbf{a}} \rVert^2 \le R^2+\xi_i, \quad \xi_i\ge0,\; \forall i$$
 
 </center>
 
@@ -450,7 +449,7 @@ $s.t. \lVert \mathbf{\Phi(\mathbf{X_i})-\mathbf{a}} \rVert^2 \le R^2+\xi_i, \qua
 
 <center>
 
-$f(\mathbf{X})=sign(R^2-\lVert \mathbf{\Phi(\mathbf{X_i})-\mathbf{a}} \rVert^2)$
+$$f(\mathbf{X})=sign(R^2-\lVert \mathbf{\Phi(\mathbf{X_i})-\mathbf{a}} \rVert^2)$$
 
 </center>
 
@@ -458,9 +457,9 @@ $f(\mathbf{X})=sign(R^2-\lVert \mathbf{\Phi(\mathbf{X_i})-\mathbf{a}} \rVert^2)$
 
 <center>
 
-$L=R^2 + C\sum_{i=1}^l\xi_i- \sum_{i=1}^l\alpha_i(R^2+\xi_i-(\mathbf{\Phi(\mathbf{X_i})\mathbf{\Phi(\mathbf{X_i})-2\cdot a\cdot \mathbf{\Phi(\mathbf{X_i})+a\cdot a}}}))-\sum_{i=1}^l\beta_i\xi_i\\$
+$$L=R^2 + C\sum_{i=1}^l\xi_i- \sum_{i=1}^l\alpha_i(R^2+\xi_i-(\mathbf{\Phi(\mathbf{X_i})\mathbf{\Phi(\mathbf{X_i})-2\cdot a\cdot \mathbf{\Phi(\mathbf{X_i})+a\cdot a}}}))-\sum_{i=1}^l\beta_i\xi_i\\$$
 
-$\alpha_i \ge0, \; \beta_i \ge0$
+$$\alpha_i \ge0, \; \beta_i \ge0$$
 
 </center>
 
@@ -468,10 +467,10 @@ $\alpha_i \ge0, \; \beta_i \ge0$
 
 <center>
 
-$\frac{\partial L}{\partial R}=2R-2R\sum_{i=1}^l\alpha_i=0\quad \Rightarrow \quad \sum_{i=1}^l\alpha_i=1$
+$$\frac{\partial L}{\partial R}=2R-2R\sum_{i=1}^l\alpha_i=0\quad \Rightarrow \quad \sum_{i=1}^l\alpha_i=1$$
 
 
-$\frac{\partial L}{\partial \mathbf{a}}=2\sum_{i=1}^l\alpha_i\cdot\mathbf{\Phi(\mathbf{X_i})-2\mathbf{a}\cdot\sum_{i=1}^l\alpha_i=0}\quad \Rightarrow\quad \mathbf{a}=\sum_{i=1}^l\alpha_i\cdot\mathbf{\Phi(\mathbf{X_i})}\\$
+$$\frac{\partial L}{\partial \mathbf{a}}=2\sum_{i=1}^l\alpha_i\cdot\mathbf{\Phi(\mathbf{X_i})-2\mathbf{a}\cdot\sum_{i=1}^l\alpha_i=0}\quad \Rightarrow\quad \mathbf{a}=\sum_{i=1}^l\alpha_i\cdot\mathbf{\Phi(\mathbf{X_i})}\\$$
 
 $\frac{\partial L}{\partial \xi_i}=C-\alpha_i-\beta_i=0 \quad \forall i$
 
@@ -481,13 +480,13 @@ $\frac{\partial L}{\partial \xi_i}=C-\alpha_i-\beta_i=0 \quad \forall i$
 
 <center>
 
-$L=R^2 + C\sum_{i=1}^l\xi_i- \sum_{i=1}^l\alpha_i(R^2+\xi_i-(\mathbf{\Phi(\mathbf{X_i})\mathbf{\Phi(\mathbf{X_i})-2\cdot a\cdot \mathbf{\Phi(\mathbf{X_i})+a\cdot a}}}))-\sum_{i=1}^l\beta_i\xi_i\\$
+$$L=R^2 + C\sum_{i=1}^l\xi_i- \sum_{i=1}^l\alpha_i(R^2+\xi_i-(\mathbf{\Phi(\mathbf{X_i})\mathbf{\Phi(\mathbf{X_i})-2\cdot a\cdot \mathbf{\Phi(\mathbf{X_i})+a\cdot a}}}))-\sum_{i=1}^l\beta_i\xi_i\\$$
 
-$=R^2-R^2\sum_{i=1}^l\alpha_i+\sum_{i=1}^l\xi_i(C-\alpha_i-\beta_i)\\$
+$$=R^2-R^2\sum_{i=1}^l\alpha_i+\sum_{i=1}^l\xi_i(C-\alpha_i-\beta_i)\\$$
 
-$+\sum_{i=1}^l\alpha_i\mathbf{\Phi(\mathbf{X_i})}\cdot\mathbf{\Phi(\mathbf{X_i})}-2\sum_{i=1}^l\sum_{i=1}^l\alpha_i\alpha_j\mathbf{\Phi(\mathbf{X_i})}\cdot\mathbf{\Phi(\mathbf{X_j})}\\+\sum_{i=1}^l\sum_{i=1}^l\alpha_i\alpha_j\mathbf{\Phi(\mathbf{X_i})}\cdot\mathbf{\Phi(\mathbf{X_j})}$
+$$+\sum_{i=1}^l\alpha_i\mathbf{\Phi(\mathbf{X_i})}\cdot\mathbf{\Phi(\mathbf{X_i})}-2\sum_{i=1}^l\sum_{i=1}^l\alpha_i\alpha_j\mathbf{\Phi(\mathbf{X_i})}\cdot\mathbf{\Phi(\mathbf{X_j})}\\+\sum_{i=1}^l\sum_{i=1}^l\alpha_i\alpha_j\mathbf{\Phi(\mathbf{X_i})}\cdot\mathbf{\Phi(\mathbf{X_j})}$$
 
-$max\;L=\sum_{i=1}^l\alpha_i\mathbf{\Phi(\mathbf{X_i})}\cdot\mathbf{\Phi(\mathbf{X_i})}-\sum_{i=1}^l\sum_{i=1}^l\alpha_i\alpha_j\mathbf{\Phi(\mathbf{X_i})}\cdot\mathbf{\Phi(\mathbf{X_j})}\qquad (0\le\alpha_i\le C)\\$
+$$max\;L=\sum_{i=1}^l\alpha_i\mathbf{\Phi(\mathbf{X_i})}\cdot\mathbf{\Phi(\mathbf{X_i})}-\sum_{i=1}^l\sum_{i=1}^l\alpha_i\alpha_j\mathbf{\Phi(\mathbf{X_i})}\cdot\mathbf{\Phi(\mathbf{X_j})}\qquad (0\le\alpha_i\le C)\\$$
 
 </center>
 
@@ -495,7 +494,7 @@ $max\;L=\sum_{i=1}^l\alpha_i\mathbf{\Phi(\mathbf{X_i})}\cdot\mathbf{\Phi(\mathbf
 
 <center>
 
-$min\;L =\sum_{i=1}^l\sum_{i=1}^l\alpha_i\alpha_j\mathbf{\Phi(\mathbf{X_i})}\cdot\mathbf{\Phi(\mathbf{X_j})}-\sum_{i=1}^l\alpha_i\mathbf{\Phi(\mathbf{X_i})}\cdot\mathbf{\Phi(\mathbf{X_i})} \qquad (0\le\alpha_i\le C)$
+$$min\;L =\sum_{i=1}^l\sum_{i=1}^l\alpha_i\alpha_j\mathbf{\Phi(\mathbf{X_i})}\cdot\mathbf{\Phi(\mathbf{X_j})}-\sum_{i=1}^l\alpha_i\mathbf{\Phi(\mathbf{X_i})}\cdot\mathbf{\Phi(\mathbf{X_i})} \qquad (0\le\alpha_i\le C)$$
 
 </center>
 
@@ -507,9 +506,7 @@ $min\;L =\sum_{i=1}^l\sum_{i=1}^l\alpha_i\alpha_j\mathbf{\Phi(\mathbf{X_i})}\cdo
 Isolation Forest는 하나의 이상치를 고립시키는 Tree를 생성하는 것이 목적입니다. 이상치는 개체수가 적으며, 정상 데이터와는 특정 속성 값이 많이 다를 가능성이 높습니다. 아래 그림과 같이 사용되는 선의 개수가 적을수록 outlier에 가까워집니다. 
 
 <center>
-
 <img src="https://postfiles.pstatic.net/MjAyMjExMTRfMTYx/MDAxNjY4MzkzNzk5Nzcy.4ah1rxmgCQyGOR-rdaOHCKV9lHZUvtI7-Onvreya0jEg.Shw1p65N_K9ir2zQxn7VxJbIYr_p3_NHo2jR_jhDoLQg.PNG.dhyoo9701/28.png?type=w773">
-
 </center>
 
 아래 그림과 같이 각각의 데이터를 다른 데이터들로부터 분리시키는 과정은 하나의 Isolation tree로 표현할 수 있습니다. 그리고 이 분리 과정을 랜덤하게 여러번 반복하면 isolation forest가 됩니다. 이 때 여러번의 랜덤한 분리과정에서 꾸준히 적은 선으로 분리되는 데이터는 outlier로 분류되고, 꾸준히 많은 선으로 분리되는 데이터는 정상데이터로 분류됩니다. 
@@ -524,7 +521,7 @@ Isolation Forest는 하나의 이상치를 고립시키는 Tree를 생성하는 
 
 <center>
 
-$c(n) = 2H(n-1)-\frac{2(n-1)}{n}, H(i)=ln(i) + 0.5772156649$ (Euler's constant)
+$$c(n) = 2H(n-1)-\frac{2(n-1)}{n}, H(i)=ln(i) + 0.5772156649$$ (Euler's constant)
 
 </center>
 
@@ -532,7 +529,7 @@ $c(n) = 2H(n-1)-\frac{2(n-1)}{n}, H(i)=ln(i) + 0.5772156649$ (Euler's constant)
 
 <center>
 
-$s(x,n) = 2^-\frac{E(h(x))}{c(n)}$
+$$s(x,n) = 2^-\frac{E(h(x))}{c(n)}$$
 
 </center>
 
