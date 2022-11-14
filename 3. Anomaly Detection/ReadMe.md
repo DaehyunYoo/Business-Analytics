@@ -398,7 +398,7 @@ primal의 목적식을 dual 형태로 바꾸게 됩니다. 이 dual을 최대화
 
 <center>
 
-$$min \; L= \frac{1}{2}\sum_{i=1}^l\sum_{j=1}^l\alpha_i\alpha_j\mathbf{\Phi(\mathbf{X_i})}\cdot\mathbf{\Phi(\mathbf{X_j})} (5)\\
+$$min \; L= \frac{1}{2}\sum_{i=1}^l\sum_{j=1}^l\alpha_i\alpha_j\mathbf{\Phi(\mathbf{X_i})}\cdot\mathbf{\Phi(\mathbf{X_j})} \\
 s.t. \quad \sum_{i=1}^l\alpha_i =1 , \quad 0\le \alpha_i\le\frac{1}{\nu l }$$
 
 </center>
