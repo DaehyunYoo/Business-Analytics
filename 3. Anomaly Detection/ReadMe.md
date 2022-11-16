@@ -324,9 +324,9 @@ One-class SVM의 수식은 다음과 같습니다. 기존의 SVM 목적식에서
 해당 목적식의 제약식을 Lagrangian problem으로 변환하고 KKT조건으로 문제를 풀게 됩니다. 해당 목적식으로부터 w를 얻고 decision function을 얻을 수 있게 됩니다. 새로운 데이터가 입력되었을 떄 그 값이 +이면 정상, -이면 outlier 데이터로 분류하게 됩니다. 
 
 <center>
-$$min_w  \frac{1}{2}\ \lVert w\rVert ^2+ \frac{1}{\nu l}\sum_{i=1}^l\xi_i-\rho\\
-s.t. \quad \mathbf{W}\cdot\boldsymbol{\Phi}(\mathbf{X_i})\ge\rho-\xi_i\\
-i=1,2,...,l, \qquad \xi\ge0\\$$
+$$min_w  \frac{1}{2}\ \lVert w\rVert ^2+ \frac{1}{\nu l}\sum_{i=1}^l\xi_i-\rho$
+$$s.t. \quad \mathbf{W}\cdot\boldsymbol{\Phi}(\mathbf{X_i})\ge\rho-\xi_i$$
+$$i=1,2,...,l, \qquad \xi\ge0$$
 </center>
 
 - Decision function
