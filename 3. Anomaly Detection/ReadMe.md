@@ -305,7 +305,8 @@ k값은 임의로 지정하는 hyperparameter이지만 실루엣 너비, GAP 통
 
 
 # Model-based Anomaly Detection
-[https://github.com/YooD11/Business-Analytics/blob/main/3.%20Anomaly%20Detection/Model-based%20Anomaly%20Detection.ipynb)
+
+[Tutorial](https://github.com/YooD11/Business-Analytics/blob/main/3.%20Anomaly%20Detection/Model-based%20Anomaly%20Detection.ipynb)
 
 ## Auto-Encoder for Novelty Detection
 Auto-Encoder는 neural network 모델의 한 종류로, input data를 받았을 때 input data를 잘 표현하는 latent vector를 만드는 것이 목적입니다. encoder를 통해 입력 데이터에 대한 특징을 추출해내고, 이 결과를 가지고 neural network를 역으로 붙여 원본 데이터를 생성해내게 됩니다. 
