@@ -10,7 +10,8 @@ Anomaly Data는 Novel Data와 마찬가지로 이상치 데이터를 뜻합니�
 
 Anomaly Detection은 한쪽 범주만 학습하여 정상 범주에 포함되지 않으면 이상치로 분류하고 Classification은 양쪽 범주를 모두 학습합니다. 그런데 이 기준은 보통 범주간 불균형이 심한 약 0.1:99.9정도로 심한 경우나, 수가 적은 클래스가 충분하지 않다면 Anomaly Detection에 해당됩니다. 반대로 class imbalance가 8:2, 7:3이나 애매한 정도라면 class imbalance를 해결할 수 있는 방법을 찾고 classification에 해당됩니다. Classification의 성능이 보다 우수할 가능성이 높습니다. 
 
-# Density-based Anomaly Detection
+# Density-based Anomaly Detection [Tutorial](https://github.com/YooD11/Business-Analytics/blob/main/3.%20Anomaly%20Detection/Density-based%20Anomaly%20Detection.ipynb)
+
 Density-based Anomaly Detecion 밀도기반 추정법은 주어진 데이터를 바탕으로 각 객체들이 생성될 확률을 추정하는 것입니다. 새로운 데이터가 생성될 확률이 낮을 경우 이상치로 판단하고 정상 데이터로 분포를 만들어놓고 새로운 Data를 추가해 위치를 보고 이상치인지 아닌지를 판별하게 됩니다. 
 
 <p align="center"><img src="https://postfiles.pstatic.net/MjAyMjExMTRfMTU4/MDAxNjY4MzkzNzk4ODAz.7BDWooKOL6wFiXsvdJ1XHRZd_ZiFNHKK57mIC9d5P6wg.rSXr6ixP2E9-anVeQ-8Fe_A9LiCTmB3M48nP8e1SGe4g.PNG.dhyoo9701/2.png?type=w773" height=200"></p>
@@ -210,7 +211,8 @@ case1이나 case3 같이 평균 거리가 크지 않은 경우 lof는 1에 근�
 
 ------------
 
-# Distance-based Anomaly Detection
+# Distance-based Anomaly Detection[Tutorial](https://github.com/YooD11/Business-Analytics/blob/main/3.%20Anomaly%20Detection/Distance-based%20Anomaly%20Detection.ipynb)
+
 ## 1. k-Nearest Neighbor-based Approach
 이 기법은 잘 알려진 인스턴스 기반(instance based) 학습 분류 알고리즘인 k-최근접이웃(k-Nearest Neighbor, KNN)을 응용한 기법입니다. 
 
