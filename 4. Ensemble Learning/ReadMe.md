@@ -48,13 +48,13 @@ Random Forest는 overfitting을 방지하기 위해 최적의 기준 변수를 �
 
 ## Random Forest Procedure
 - Training set에서 표본 크기가 n인 bootstrap 수행
-<p align="center"><img src="./img/1.png" height=200></p>
+<p align="center"><img src="https://postfiles.pstatic.net/MjAyMjExMzBfMTcw/MDAxNjY5NzkxMDI5Mzkz.hF0y1eOuUYXE7d2ZnJjUfgtBpkhKtsIoI3X0ajy_AVMg.KVu3xatycmRsHTiYV18fXuQw8568GqTFKVSjYTrnYGkg.PNG.dhyoo9701/1.png?type=w773" height=200></p>
 
 - Bootstrap sample에 대해 Random forest tree 모형 제작
   - 전체 변수중에서 m개 변수를 랜덤하게 선택
   - 최적의 classifier 선정
   - classifier에 따라 두 개의 자식 node 생성
-<p align="center"><img src="./img/2.png" height=300></p>
+<p align="center"><img src="https://postfiles.pstatic.net/MjAyMjExMzBfMTQx/MDAxNjY5NzkxMDI5Mzg4.6GjVLePfO3F_98zn8wffbz9ZsgRNh8_pwtscGyLrrUAg.3ST3nBdWGN6OiSXocjUDuPlwCb-FDpXMYtqH61GRduEg.PNG.dhyoo9701/2.png?type=w773" height=300></p>
 
 - Tree 들의 앙상블 학습 결과 출력
 
