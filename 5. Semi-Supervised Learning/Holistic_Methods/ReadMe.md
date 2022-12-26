@@ -55,7 +55,7 @@ $$\mathcal{L}_{\mathcal{U}}=\frac{1}{L|\mathcal{U}'|}\sum_{u,q \in \mathcal{U}'}
 
 $$\mathcal{L}=\mathcal{L}_{\mathcal{X}}+\lambda_{\mathcal{U}}\mathcal{L}_{\mathcal{U}} $$
 
-$$\mathcal{L}_\mathcal{X}$$는 augmented labeled data에 대한 training loss 입니다. 다음 $\mathcal{L}_\mathcal{U}$는 augmented unlabeled data에 대한 loss입니다. Consistency Regularization에 의해 나타나며, 모델이 augmentation한 같은 데이터들에 대해 일관된 예측을 하는지 보기 위한 loss입니다. 이는 unlabeled data에 대한 loss이자 predictive uncertainity에 대한 measure로 해석할 수 있습니다.
+$\mathcal{L}_{\mathcal{X}}$는 augmented labeled data에 대한 training loss 입니다. 다음 $\mathcal{L}_{\mathcal{U}}$는 augmented unlabeled data에 대한 loss입니다. Consistency Regularization에 의해 나타나며, 모델이 augmentation한 같은 데이터들에 대해 일관된 예측을 하는지 보기 위한 loss입니다. 이는 unlabeled data에 대한 loss이자 predictive uncertainity에 대한 measure로 해석할 수 있습니다.
 
 # FixMatch
 ## Method
