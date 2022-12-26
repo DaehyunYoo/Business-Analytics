@@ -26,3 +26,5 @@ $$Loss = L_s + L_u $$
 ### UDA Contributution
 - Data augmentation을 통한 Consistency training: unlabeled data에 대해 Consistency loss를 최소화하는 과정에서 노이즈에 강건한 모델 생성
 - Semi-Supervised learning: Supervised Cross Entropy Loss와 Unsupervised Consistency Loss를 동시에 최소화하는 과정에서 labeled data의 정보가 unlabeled data 전파되도록 모델 업데이트
+
+[UDA(Unsupervised Data Augmentation) Code]()
