@@ -3,7 +3,9 @@
 ## Consistency Regularization
 Consistency는 input data를 augmentation한 것에 대해 prediction의 일관성을 의미합니다. 즉, 약간 변형한 데이터를 넣어도 일관성있는 예측값을 얻을 수 있도록 하는 것입니다. 
 
+
 <p align="center"><img src="https://blog.kakaocdn.net/dn/epU6yc/btqO0Tj2N4G/PIdRbnzWiD9096CUGrKVgk/img.png"></p>
+
 
 수식에서 Augment()는 stochastic data augmentation을 의미합니다. 수식을 통해 모델은 augmented된 data에 대해 같은 class로 분류되도록 학습된다는 것을 알 수 있습니다.
 
@@ -19,6 +21,7 @@ Entropy Minimization의 대표적방법은 Pseudo-Labeling입니다. 이는 unla
 ## Mixup 
 
 초록색을 Class1, 주황색을 Class2, 파란색은 prediction probability라고 하고 class1, class2의 비율이 0.8, 0.2 비율이 되도록 섞습니다. 그럼 데이터가 변형되고 모델은 새로운 데이터라고 인식하고 학습하게 됩니다. 이렇게 가짜 label이 형성되면서 perturbation에 대해 강건한(robust)하게 학습할 수 있습니다.
+
 
 <p align="center"><img src="https://euphoria0-0.github.io/assets/img/posts/2021-01-08-Semi-Supervised-Learning-and-MixMatch/MixUp.png" height=250></p>
 
@@ -52,7 +55,7 @@ $$\mathcal{L}_{\mathcal{U}}=\frac{1}{L|\mathcal{U}'|}\sum_{u,q \in \mathcal{U}'}
 
 $$\mathcal{L}=\mathcal{L}_{\mathcal{X}}+\lambda_{\mathcal{U}}\mathcal{L}_{\mathcal{U}} $$
 
-$\mathcal{L}_\mathcal{X}$는 augmented labeled data에 대한 training loss 입니다. 다음 $\mathcal{L}_\mathcal{U}$는 augmented unlabeled data에 대한 loss입니다. Consistency Regularization에 의해 나타나며, 모델이 augmentation한 같은 데이터들에 대해 일관된 예측을 하는지 보기 위한 loss입니다. 이는 unlabeled data에 대한 loss이자 predictive uncertainity에 대한 measure로 해석할 수 있습니다.
+수식 $\mathcal{L}_\mathcal{X}$는 augmented labeled data에 대한 training loss 입니다. 다음 $\mathcal{L}_\mathcal{U}$는 augmented unlabeled data에 대한 loss입니다. Consistency Regularization에 의해 나타나며, 모델이 augmentation한 같은 데이터들에 대해 일관된 예측을 하는지 보기 위한 loss입니다. 이는 unlabeled data에 대한 loss이자 predictive uncertainity에 대한 measure로 해석할 수 있습니다.
 
 # FixMatch
 ## Method
@@ -85,5 +88,6 @@ FlexMatch는 (CPL)Curriculum pseudo labeling을 통해 각 class의 confidence�
 
 첫번째로 confidence(예측 확률값의 max)가 미리 지정한 threshold를 넘기면서 해당 class로 예측된 unlabeled sample의 개수를 사용하여 Learning effect를 측정합니다.
 두번째는 0~1 사이값으로 learning effect를 정규화합니다. 마지막으로 세번째 class별 threshold를 업데이트하고 threshold보다 높으면 pseudo-label로 활용하여 loss를 계산하고 threshold보다 낮으면 loss=0으로 설정합니다.
+
 
 <p align="center"><img src="https://ai2-s2-public.s3.amazonaws.com/figures/2017-08-08/d85de62abb78b184d02e4c9761b98fa9e7dca6ca/3-Figure1-1.png" height=200></p>
