@@ -15,6 +15,7 @@ Entropy Minimization의 대표적방법은 Pseudo-Labeling입니다. 이는 unla
 
 <p align="center"><img src="https://www.researchgate.net/publication/345432485/figure/fig1/AS:955199128608771@1604748627675/Pseudo-Labeling-Learning-Architecture.png" height=250></p>
 
+
 ## Mixup 
 
 초록색을 Class1, 주황색을 Class2, 파란색은 prediction probability라고 하고 class1, class2의 비율이 0.8, 0.2 비율이 되도록 섞습니다. 그럼 데이터가 변형되고 모델은 새로운 데이터라고 인식하고 학습하게 됩니다. 이렇게 가짜 label이 형성되면서 perturbation에 대해 강건한(robust)하게 학습할 수 있습니다.
