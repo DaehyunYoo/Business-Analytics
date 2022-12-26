@@ -89,5 +89,4 @@ FlexMatch는 (CPL)Curriculum pseudo labeling을 통해 각 class의 confidence�
 첫번째로 confidence(예측 확률값의 max)가 미리 지정한 threshold를 넘기면서 해당 class로 예측된 unlabeled sample의 개수를 사용하여 Learning effect를 측정합니다.
 두번째는 0~1 사이값으로 learning effect를 정규화합니다. 마지막으로 세번째 class별 threshold를 업데이트하고 threshold보다 높으면 pseudo-label로 활용하여 loss를 계산하고 threshold보다 낮으면 loss=0으로 설정합니다.
 
-
-<p align="center"><img src="https://ai2-s2-public.s3.amazonaws.com/figures/2017-08-08/d85de62abb78b184d02e4c9761b98fa9e7dca6ca/3-Figure1-1.png" height=200></p>
+<p align="center"><img src= "https://ai2-s2-public.s3.amazonaws.com/figures/2017-08-08/d85de62abb78b184d02e4c9761b98fa9e7dca6ca/3-Figure1-1.png" height=200></p>
