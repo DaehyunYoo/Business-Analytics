@@ -43,7 +43,6 @@ aug: fa_reduced_cifar10
 # UDA-related hyperparams
 batch: 64/32/16
 num_class: 3/6/10
-dropout_rate: 
 
 # training params
 epoch: 30
