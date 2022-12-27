@@ -90,3 +90,11 @@ FlexMatch는 (CPL)Curriculum pseudo labeling을 통해 각 class의 confidence�
 두번째는 0~1 사이값으로 learning effect를 정규화합니다. 마지막으로 세번째 class별 threshold를 업데이트하고 threshold보다 높으면 pseudo-label로 활용하여 loss를 계산하고 threshold보다 낮으면 loss=0으로 설정합니다.
 
 <p align="center"><img src= "https://www.microsoft.com/en-us/research/uploads/prod/2022/09/usb-1.png" height=200></p>
+
+# 실험결과
+
+|labels|500|1000|2000|4000|
+|---|---|---|---|---|  
+|MixMatch|0.8825|0.8983|0.9287|0.9327|
+
+MixMatch의 경우 성능이 당연하게도 라벨의 갯수가 늘어남에 따라 성능이 개선되는 것을 확인할 수 있습니다.
