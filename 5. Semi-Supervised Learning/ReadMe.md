@@ -27,4 +27,53 @@ $$Loss = L_s + L_u $$
 - Data augmentation을 통한 Consistency training: unlabeled data에 대해 Consistency loss를 최소화하는 과정에서 노이즈에 강건한 모델 생성
 - Semi-Supervised learning: Supervised Cross Entropy Loss와 Unsupervised Consistency Loss를 동시에 최소화하는 과정에서 labeled data의 정보가 unlabeled data 전파되도록 모델 업데이트
 
-[UDA(Unsupervised Data Augmentation) Code]()
+
+# 실험결과
+
+## 데이터
+실험에 사용한 데이터는 CIFAR-10 데이터 입니다. 이 데이터는 10개의 Class를 갖고 있으며 각 Class당 6000개의 image로 이루어진 balance data입니다. 50000개의 train set과 10000개의 test set으로 이루어져 있습니다. 
+
+## Hyper Parameter
+```python
+model:
+  type: wresnet28_2
+dataset: cifar10
+aug: fa_reduced_cifar10  
+
+# UDA-related hyperparams
+batch: 64/32/16
+num_class: 3/6/10
+dropout_rate: 
+
+# training params
+epoch: 30
+lr: 0.0001
+momentum:0.9
+optimizer:SGD
+weight decay: 0.0005
+```
+
+## Results
+실험결과의 top1 error와 top5 error를 사용하여 성능을 확인하였습니다.
+
+- batch_size에 따른 정확도
+
+|batch size|64|32|16|
+|---|---|---|---|  
+|top1 ACC|0.5909|0.6885|0.7209|
+|top5 ACC|0.946|0.0.9752|0.9827|
+|Time(Hours)|0.927|1.662|3.582|
+
+- num_class에 따른 정확도
+
+|class|2|5|10|
+|---|---|---|---|  
+|top1 ACC|0.6134|0.5945|0.455|
+|top5 ACC|0.9648|0.9616|0.935|
+
+
+## 결론
+
+- batch size에 따른 정확도는 batch size가 작을수록 정확도가 높아지는 것을 확인할 수 있었습니다. top1 정확도의 경우에는 명확한 차이를 확인할 수 있었으며 top 5 정확도의 경우에는 top1 정확도보다는 확연하지는 않았지만 그래도 유의미한 차이를 확인할 수 있었습니다. 또한 batch size가 작아질수록 시간 또한 많이 소요되는 것을 확인할 수 있었습니다. 
+
+- class num에 따른 정확도는 큰 차이가 없었습니다. 오히려 class수가 2에서 5로 늘렸을 때 정확도가 감소했음을 확인할 수 있었으며 class를 10으로 둔다면 성능이 떨어지는 것도 확인할 수 있었습니다. 
